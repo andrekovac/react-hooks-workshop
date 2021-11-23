@@ -2,6 +2,12 @@
 
 A workshop which dives deep into all React built-in hooks
 
+## Structure of this document
+
+- Moving from point to point is a journey (aka deep dive) into the world of React Hooks in a `<Counter />` scenario.
+- Points starting with an "**[Extra]**" are some extra CodeSandBoxes which are not part of the journey but hope to introduce a certain hook or give you some even deeper insight into them.
+- Working through all of the examples as part of a workshop will take at least one day, more realistically 1.5 days.
+
 ## Definition of React Hooks
 
 > Hooks are functions, but it’s helpful to think of them as unconditional declarations about your component’s needs.
@@ -27,7 +33,7 @@ Hooks can only be at the top-level of your component.
 	- **Question**: Why does the `countOutside` value also change (with the state value) but inner `count` does not?
 	- **Explanation**: The inner `count` gets initialized (and set to `0`) on **every render** which is triggered by the state value.
 	
-3. `useState` hook uses strict equality (`===`) comparison to decide whether to return a new value
+3. **[Extra]** `useState` hook uses strict equality (`===`) comparison to decide whether to return a new value
 
 	[This CodeSandBox](https://codesandbox.io/s/react-usestate-new-vs-old-object-values-cbhyi) features broken and correct ways to update state.
 
@@ -76,7 +82,7 @@ Hooks can only be at the top-level of your component.
 
 ## useRef
 
-6. `useRef` in general
+6. **[Extra]** `useRef` in general
 
 	- **Stable across re-renders**: React stores the ref to remain immutable over the course of the lifetime of the component (especially if the contents (i.e. `ref.current` value) gets mutated).
 	- Thus, `useRef` value remains the same across re-renders. [This CodeSandBox](https://codesandbox.io/s/usestate-useref-vs-local-values-ogm61?file=/src/index.js) shows the difference to an object value in `useState` and local variables.
@@ -94,7 +100,7 @@ Hooks can only be at the top-level of your component.
 		- **Answer**: Because we want Animation value to change independent of rendering of component in which animated value gets defined.
 	- You don’t have any guarantees that reading the refs value `countRef.current` would give you the same value in any particular callback (as opposed to state and props values). By definition, you can mutate it any time.
 
-8. [] Other definition of `ref`
+8. **[Extra]** Other definition of `ref`
 
 	In a [tweet](https://twitter.com/dan_abramov/status/1099842565631819776) Dan Abramov gave an interesting definition of a ref:
 
@@ -174,10 +180,29 @@ Hooks can only be at the top-level of your component.
 
 	- **Note**: With `count` as dependency and constant setting and clearing of `setInterval`, the `count` increases because of `count` dependency. Really equivalent with `setTimeout`!
 
+14. **[Extra]** `usePrevious`: Custom hook example using `useRef`
+
+	: Since `useRef` can store the value across a re-render you can use it to store a value from a previous render, i.e. as a custom  hook:
+
+	```js
+	function Counter() {
+	  const [count, setCount] = useState(0);
+	  const prevCount = usePrevious(count);  return <h1>Now: {count}, before: {prevCount}</h1>;
+	}
+	
+	function usePrevious(value) {  const ref = useRef();
+	  useEffect(() => {
+	    ref.current = value;
+	  });
+	  return ref.current;
+	}
+	```
+	
+	Example taken from the section ["How to get the previous props or state?" in the React docs](https://reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state)
 
 ## [useReducer](https://github.com/facebook/react/blob/48d475c9ed20ab4344b3f1969716b76d8a476171/packages/react-dom/src/server/ReactPartialRendererHooks.js#L261)
 
-14. `useReducer` in general
+14. **[Extra]** `useReducer` in general
 
 	- [CodeSandBox with useReducer and useState Counters](https://codesandbox.io/s/usereducer-and-usestate-mutated-vs-copy-32dnc?file=/src/index.js)
 	- **Task**: Observe the `console.log`s:
@@ -203,7 +228,7 @@ Hooks can only be at the top-level of your component.
 	
 ## useLayoutEffect
 
-16. `useLayoutEffect`:
+16. **[Extra]** `useLayoutEffect`:
 
 	- **Heuristic** when to use it: If your component is flickering when state is updated.
 
@@ -222,7 +247,7 @@ Hooks can only be at the top-level of your component.
 
 ## class component vs. function component
 	
-17. `class` vs. `component` difference on closure: 
+17. **[Extra]** `class` vs. `component` difference on closure: 
 
 	- [This CodeSandBox](https://codesandbox.io/s/19-class-function-comparison-ztzvc?file=/src/index.js) compares how function components and classes "close over" values. Play with it.
 
@@ -231,7 +256,7 @@ Hooks can only be at the top-level of your component.
 
 ## Other `useState` phenomena
 
-18. Error "`setState` on unmounted component" occurs occasionally
+18. **[Extra]** Error "`setState` on unmounted component" occurs occasionally
 
 	- **Established workaround**: [CodeSandBox: Observe useEffect with empty dependency array](https://codesandbox.io/s/18-check-for-unmount-fjryg)
 	
@@ -260,7 +285,7 @@ Hooks can only be at the top-level of your component.
 	- This handles out-of-order responses with a ref (or local variable if dependency array is empty array)
 	- It's discussed to remove the warning in this [GitHub issue](https://github.com/facebook/react/pull/22114).
 
-19. Batched / Unbatched React `useState` updates
+19. **[Extra]** Batched / Unbatched React `useState` updates
 
 	React only batches synchronous state changes, async changes run one after the other.
 	- See [my SO question](https://stackoverflow.com/a/69855770/3210677)
@@ -268,13 +293,13 @@ Hooks can only be at the top-level of your component.
 
 ## [useMemo](https://github.com/facebook/react/blob/48d475c9ed20ab4344b3f1969716b76d8a476171/packages/react-dom/src/server/ReactPartialRendererHooks.js#L338)
 
-20. `useMemo` Example
+20. **[Extra]** `useMemo` Example
 
 	- `useMemo` memoizes expensive computations so they don't re-run on each render.
 	- [Test useMemo in this CodeSandBox](https://codesandbox.io/s/21-usememo-u8pxt?file=/src/App.js)
 
 
-21. `React.memo` and `useCallback` interplay
+21. **[Extra]** `React.memo` and `useCallback` interplay
 
 	- `React.memo` is a higher-order-component which shallowly compares props before rendering to prevent unnecessary re-renders. 
 	- The second argument of `React.memo`, i.e. a function of the form `(prevProps, nextProps) => true if same result should prevent re-render. false otherwise.` can be used to refine the props comparison.
@@ -287,6 +312,6 @@ Hooks can only be at the top-level of your component.
 
 ---
 
-## Comments
+## Further Comments
 
 - The provided links to the React library are from its `server` implementation. They however exemplify their functionality better then the hook definitions in other parts of the React codebase because they are more abstract there.
