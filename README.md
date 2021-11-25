@@ -40,7 +40,12 @@ Hooks can only be at the top-level of your component.
 	- A new state value is created if the value passed to the setter function is not strictly equal the current value (referential equality in case of complex data types)
 	- Every successful state upate causes:
 		1. The component function to be re-run
-		2. A new state value to be returned by each `useState` hook ([also in the case of objects](https://codesandbox.io/s/usestate-setter-creates-new-objects-r4vid?file=/src/App.js))
+		2. A new state value to be returned by the `useState` hook
+		
+    **Note**:
+    
+    - [Also objects are entirely new objects, not just copied references](https://codesandbox.io/s/usestate-setter-creates-new-objects-r4vid?file=/src/App.js))
+    - [One state change causes all states to be new!](https://codesandbox.io/s/one-state-change-all-states-are-new-9lubk)
 
 	- **Questions**: Why do the broken increment functions increase the value without updating the UI?
 
@@ -75,10 +80,19 @@ Hooks can only be at the top-level of your component.
 
 5. Async **retrieval** of state
 
-	Test and observe with this [CodeSandBox: 05 - Async retrieval of state](https://codesandbox.io/s/05-async-retrieval-of-state-gs4tc) how Functional Components deal with `setTimeout`.
+	Test and observe this [CodeSandBox: 05 - Async retrieval of state](https://codesandbox.io/s/05-async-retrieval-of-state-gs4tc).
 	
+	- **Problem**: `count` gets frozen and subsequent changes during async setTimeout call are ignored in alert. 
 	- Can this issue be solved with the updater function? - Try it!
+	- The issue is not solved by switching from a primitive data type to a complex data type
+	  - state values are **new** on every **render** (primitive data types and objects alike)
 	- The solution of this problem is discussed later with **CodeSandBox: 06 - Async state with timeout and ref**.
+
+6. Async **retrieval** of state via helper variable
+
+  - Closure in action!
+  - **Task**: What is going on in here?: [06 - Async retrieval of state with helper variable (less comments)](https://codesandbox.io/s/06-async-retrieval-of-state-with-helper-variable-less-comments-o3z9q?file=/src/index.js)
+  - **Explanation**: To understand what's going on look at the same file with comments: [06 - Async retrieval of state with helper variable (with comments)](https://codesandbox.io/s/06-async-retrieval-of-state-with-helper-variable-with-comments-xod8h?file=/src/index.js)
 
 ## useRef
 
@@ -91,10 +105,10 @@ Hooks can only be at the top-level of your component.
 
 7. `useRef` reflects "current" value irrespective of re-renders
 
-	- Using `ref` displays current value
+	- Using `ref` displays current value because the ref object is guaranteed to remain stable for the lifetime of the component.
 	- [CodeSandBox: 06 - Async state with timeout and ref](https://codesandbox.io/s/06-async-state-with-timeout-and-ref-klbjo)
-	- In this CodeSandBox change the state value to the **ref** value.
-	- You should observe that the state "closes over" timeout
+	- **Task**: Change the state value to the **ref** value.
+	- You should observe that the state value "closes over" the timeout. It's frozen. But the updated ref value is accessible because it got updated 
 	
 	- **Question**: Why is Animated value stored in ref?
 		- **Answer**: Because we want Animation value to change independent of rendering of component in which animated value gets defined.
