@@ -32,4 +32,11 @@ This code example wants to do two thing:
 
 - **Heuristic** when to use it: If your component is flickering when state is updated.
 
+## React hooks lifecycle
+
+### Notes
+
+- `render` is a **React** render. It doesn't refer to DOM updates or to paints to the screen.
+- lazy initializers is e.g. a function as initial state in a `useState` hook instead of a value. Read [this article](https://kentcdodds.com/blog/use-state-lazy-initialization-and-function-updates) for more information about it.
+
 ![React Hook Flow Diagram](https://github.com/donavon/hook-flow/blob/master/hook-flow.png?raw=true)

@@ -26,6 +26,14 @@ A workshop which dives deep into all React built-in hooks
 
 9. [`useReducer`](./sections/useReducer.md)
 10. [`useLayoutEffect`](./sections/useLayoutEffect.md)
+
+	Topics covered:
+	
+	- `useLayoutEffect` vs. `useEffect`
+	- a-typical use of `useState` setter function
+	- `useEffect`/`useLayoutEffect` dependency array with **refs**
+	- React hooks **lifecycle**
+
 11. [class vs. function components](./sections/class-vs-function-component.md)
 12. [`React.memo` HOC performance improvement](./sections/react-memo.md)
 
