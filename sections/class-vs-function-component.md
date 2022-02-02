@@ -6,3 +6,5 @@
 
     - **Solution**: Click "Follow", then quickly change profile and observe name in alert.
     - **Explanation**: `this.props` is mutable in class components and immutable (`const`) in function components.
+
+- [**CodeSandBox**: fix class component issue](https://codesandbox.io/s/class-function-comparison-fixed-uir9w?file=/src/ProfilePageClass.tsx) by storing the user at the time of the click.
