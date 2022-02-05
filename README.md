@@ -45,6 +45,7 @@ A workshop which dives deep into all React built-in hooks
 	- Discussion of code organization
 
 13. [`useMemo` hook](./sections/useMemo.md)
+14. [`useImperativeHandle` hook](./sections/useImperativeHandle.md)
 
 ## Extra
 
