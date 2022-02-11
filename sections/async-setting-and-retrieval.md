@@ -6,6 +6,8 @@
 
 - Setter of state is in an asynchronous function.
 
+**Non-ideal solution**: [**CodeSandBox**: Async setting of state (non-ideal solution)](https://codesandbox.io/s/async-setting-of-state-non-ideal-solution-p93pw)
+
 **Solution**: [**CodeSandBox**: Async setting of state with functional updater form](https://codesandbox.io/s/async-setting-of-state-with-functional-updater-form-myvws)
 
 - [functional updater form](https://reactjs.org/docs/hooks-reference.html#functional-updates) (`c -> c + 1`) of useState hook.
