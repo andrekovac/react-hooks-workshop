@@ -11,11 +11,13 @@ This code example wants to do two thing:
 - **Issue 1**: Observe flickering because of `useEffect` in [this **CodeSandBox** (JS)](https://codesandbox.io/s/20-useeffect-flickering-no-deps-array-15lb1?file=/src/index.js)
 - **Solution** with `useLayoutEffect`: [This **CodeSandBox** (JS)](https://codesandbox.io/s/21-uselayouteffect-with-deps-array-y1yx8)
 
+- `useLayoutEffect` in React Native Example: Trigger `LayoutEffect` on mount of component won't work with `useEffect` because it'd happen too late.
+
 ## Dependency array
 
 - **Issue 2**: `react-hooks/exhaustive-deps` issue: missing deps and then "extract it to a separate variable so it can be statically checked" - i.e. make the code simple enough so that eslint can statically analyze it (i.e. without running the code).
 
-## Ticky usage of `useState` hook
+## Tricky usage of `useState` hook
 
 - **Bonus question**: Passing which value to `setWidth();` could stop this re-rendering invocation?
 - **Reply**: Set it to the initial width of the rectangle (e.g. `177` in my case). Setting it to `177` again won't cause a re-render.
