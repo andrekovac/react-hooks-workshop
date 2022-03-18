@@ -1,6 +1,6 @@
 ## `React.memo` and `useCallback` interplay
 
-- In this [**CodeSandBox** (JS)](https://codesandbox.io/s/react-memo-and-usecallback-s9xv5?file=/src/components/Movies.tsx) the `Movie` component gets memoized because the parent `Movies` would cause it to re-render too frequently.
+- In this [**CodeSandBox**](https://codesandbox.io/s/react-memo-and-usecallback-s9xv5?file=/src/components/Movies.tsx) the `Movie` component gets memoized because the parent `Movies` would cause it to re-render too frequently.
 
 ## `React.memo` information
 
