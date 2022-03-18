@@ -9,7 +9,7 @@ This code example wants to do two thing:
 ## `useLayoutEffect`
 
 - **Issue 1**: Observe flickering because of `useEffect` in [this **CodeSandBox**](https://codesandbox.io/s/20-useeffect-flickering-no-deps-array-15lb1)
-- **Solution** with `useLayoutEffect`: [This **CodeSandBox** (JS)](https://codesandbox.io/s/21-uselayouteffect-with-deps-array-y1yx8)
+- **Solution** with `useLayoutEffect`: [This **CodeSandBox**](https://codesandbox.io/s/21-uselayouteffect-with-deps-array-y1yx8)
 
 - `useLayoutEffect` in React Native Example: Trigger `LayoutEffect` on mount of component won't work with `useEffect` because it'd happen too late.
 
