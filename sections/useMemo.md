@@ -5,4 +5,4 @@
 
 ### `useMemo` hook example
 
-- [**CodeSandBox**: useMemo hook](https://codesandbox.io/s/21-usememo-u8pxt?file=/src/App.js): Re-rendering won't re-compute value in `useMemo` hook unless desired (as indicated via the dependency array)
+- [**CodeSandBox**: useMemo hook](https://codesandbox.io/s/21-usememo-u8pxt): Re-rendering won't re-compute value in `useMemo` hook unless desired (as indicated via the dependency array)
