@@ -15,6 +15,10 @@ A workshop which dives deep into all React built-in hooks
 3. [Async setting and retrieval](./sections/async-setting-and-retrieval.md)
 4. [`useRef` hook](./sections/useRef.md)
 5. [`useEffect` hook](./sections/useEffect.md)
+
+	- dependency array
+	- how to prevent race conditions when fetching data
+
 6. [`useCallback` hook](./sections/useCallback.md)
 
 	- Covering "Removing dependencies: **functions**" heuristics

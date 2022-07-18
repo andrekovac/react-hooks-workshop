@@ -20,3 +20,25 @@
 - Fix issues with help of `react-hooks/exhaustive-deps` rule.
 - 1) Move into `useEffect` hook
 - 2) Wrap in `useCallback` hook
+
+
+### `useEffect` hook race conditions when fetching data
+
+When implementing data fetching with a useEffect hook, you have to precent **race conditions**
+
+- **Problem**: [**CodeSandBox** (JS) with race condition](https://codesandbox.io/s/beating-async-race-conditions-in-react-forked-qj6ex9)
+
+- **Solution**: [**CodeSandBox** (JS) solution code](https://codesandbox.io/s/beating-async-race-conditions-in-react-cleanupfn-forked-dr7kwx)
+
+    **Explanation**:
+
+    1. Every new effect opens up a new **closure** which closes over the `active` value and the `fetchData` callback function.
+    2. The cleanup function of the effect belongs to the closure and so settings `active = false` changes the value of the `active` variable in the closure.
+    3. The cleanup function is run for every effect **but the last one**. Hence, the `active` value is only `true` for fetch which was initiated last.
+
+- **Recommendation**: Use an external fetching library or create a `useData` hook (as illustrated [here](https://beta.reactjs.org/learn/you-might-not-need-an-effect#fetching-data))
+
+#### Notes
+
+- See also the discussion in the [new React docs section "You Might Not Need an Effect"](https://beta.reactjs.org/learn/you-might-not-need-an-effect#fetching-data)
+- Example copied and adapted from [this blog post of Max Rosen](https://maxrozen.com/race-conditions-fetching-data-react-with-useeffect).
