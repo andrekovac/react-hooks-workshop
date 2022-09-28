@@ -50,6 +50,8 @@ A workshop which dives deep into all React built-in hooks
 
 13. [`useMemo` hook](./sections/useMemo.md)
 14. [`useImperativeHandle` hook](./sections/useImperativeHandle.md)
+15. [`useSyncExternalStore` hook (React 18)](./sections/useSyncExternalStore.md)
+16. [Context + `useContext` hook](./sections/useContext.md)
 
 ## Extra
 
@@ -72,3 +74,7 @@ This course is a collection of code examples which were inspired by other blog a
 I have to point out one article in particular here: Many examples in this course are based on [Dan Abramov](https://github.com/gaearon)'s blog article [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/). Thanks for this very enlightning read!
 
 And a huge thanks to all my students with whom I worked through the examples. Your questions and comments are continuously improving this course. Thanks!
+
+## Great resources
+
+- [React eli5](https://github.com/reactwg/react-18/discussions/46)

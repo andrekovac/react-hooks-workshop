@@ -38,6 +38,12 @@ When implementing data fetching with a useEffect hook, you have to precent **rac
 
 - **Recommendation**: Use an external fetching library or create a `useData` hook (as illustrated [here](https://beta.reactjs.org/learn/you-might-not-need-an-effect#fetching-data))
 
+### React 18: `useEffect` hooks and `StrictMode`
+
+React 18 `StrictMode` helps you spot bugs related with a forgotten `useEffect` cleanup function (if needed) by remounting every component once immediately after its initial mount in development.
+
+[Step 3 in this article of the new React docs](https://beta.reactjs.org/learn/synchronizing-with-effects#step-3-add-cleanup-if-needed) explains it nicely.
+
 #### Notes
 
 - See also the discussion in the [new React docs section "You Might Not Need an Effect"](https://beta.reactjs.org/learn/you-might-not-need-an-effect#fetching-data)
