@@ -78,3 +78,4 @@ And a huge thanks to all my students with whom I worked through the examples. Yo
 ## Great resources
 
 - [React eli5](https://github.com/reactwg/react-18/discussions/46)
+	Eli5 (explained like a 5 years old) are great articles for every topic. It's great that there's one for React, too.
