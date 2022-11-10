@@ -7,8 +7,8 @@
     1. Put all dependencies into the dependency array (don't cheat!)
     2. Now think: Can value be removed without changing the result?
 
-- In [**CodeSandBox**: count in intervals](https://codesandbox.io/s/count-in-intervals-y5qp4) the `count` doesn't change with a `setInterval`... - Why?
-- How can you make it count? - Hint: Look at the squiggly line ;-)
+- In [**CodeSandBox**: count in intervals](https://codesandbox.io/s/count-in-intervals-38qlr7) the `count` doesn't change with a `setInterval`... - Why?
+- How can you make it count? - *Hint*: Look at the squiggly line ;-)
 
 **Intermediate result**:
 
