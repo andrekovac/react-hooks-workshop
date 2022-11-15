@@ -33,13 +33,14 @@
 	
 **Note**:
 
-- [**CodeSandBox**: Also objects are entirely new objects, not just copied references (JS)](https://codesandbox.io/s/usestate-setter-creates-new-objects-r4vid))
-- [**CodeSandBox**: One state change causes all states to be new! (JS)](https://codesandbox.io/s/one-state-change-all-states-are-new-9lubk)
+- states are `const` (not `let`)! [**CodeSandBox**: Also objects are entirely new objects, not just copied references (JS)](https://codesandbox.io/s/usestate-setter-creates-new-objects-r4vid))
 
 - **Questions**: Why do the broken increment functions increase the value without updating the UI?
 - **Answer**: In case of the broken click handlers the `useState` hook's strict equality check returns `true` the `count` value in the existing state variable `objectCount` does indeed change its value, but since it won't cause the component to re-render, both `useEffect` hooks won't run and the function won't return a new UI to be rendered. See the appendix at the bottom for a code example concerning equality checks in JS.
 
 - **Note**: Since the state value and the setter function are `const` values they can't be re-assigned.
+
+**TODO**: Review this one: [**CodeSandBox**: One state change causes all states to be new! (JS)](https://codesandbox.io/s/one-state-change-all-states-are-new-9lubk)
 
 ## Appendix: Shallow copy vs. deep copy:
 	
