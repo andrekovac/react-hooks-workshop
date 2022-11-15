@@ -1,6 +1,17 @@
 ## `React.memo` and `useCallback` interplay
 
-- In this [**CodeSandBox**](https://codesandbox.io/s/react-memo-and-usecallback-s9xv5?file=/src/components/Movies.tsx) the `Movie` component gets memoized because the parent `Movies` would cause it to re-render too frequently.
+- **Starter Code**: [**CodeSandBox**](https://codesandbox.io/s/react-memo-and-usecallback-start-mc6jnc)
+
+  Discussion points:
+
+  - The `Movies` component causes `Movies` to re-render although its props don't change.
+    - What is the difference between the "React render phase" and the "graphical rendering" of DOM nodes to pixels on the screen?
+    - Fix the unnecessary re-renders.
+  - **TODO**: Add `onClick={handleMovieClick}` as prop to `Movie` component -> Problem resurfaces. Why? How can you fix it?
+  - Is there a simpler fix to the problem?
+
+- **Solution Code**: [**CodeSandBox**](https://codesandbox.io/s/react-memo-and-usecallback-s9xv5?file=/src/components/Movies.tsx) 
+  - The `Movie` component gets memoized via `React.memo`
 
 ## `React.memo` information
 
