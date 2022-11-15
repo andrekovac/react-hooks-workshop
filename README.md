@@ -52,6 +52,7 @@ A workshop which dives deep into all React built-in hooks
 14. [`useImperativeHandle` hook](./sections/useImperativeHandle.md)
 15. [`useSyncExternalStore` hook (React 18)](./sections/useSyncExternalStore.md)
 16. [Context + `useContext` hook](./sections/useContext.md)
+17. [Debugging (incl. `useDebugValue` hook)](./sections/debugging.md)
 
 ## Extra
 
