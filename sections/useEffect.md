@@ -5,7 +5,7 @@
 
 - **Task**: Start [**CodeSandBox**: fetch movies (starter code)](https://codesandbox.io/s/fetch-movies-starter-code-7ufkh) to fetch movies from [https://reactnative.dev/movies.json]() on mount and display `title` and `releaseYear` of the *first* movie in the list.
 
-- **Result**: [**CodeSandBox**: fetch movies](hhttps://codesandbox.io/s/fetch-movies-solution-sti1p)
+- **Result**: [**CodeSandBox**: fetch movies](https://codesandbox.io/s/fetch-movies-solution-sti1p)
 
 ### Dependency array
 
