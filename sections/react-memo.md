@@ -4,7 +4,7 @@
 
   Discussion points:
 
-  - The `Movies` component causes `Movies` to re-render although its props don't change.
+  - The `Movies` component causes `Movie` to re-render although its props don't change.
     - What is the difference between the "React render phase" and the "graphical rendering" of DOM nodes to pixels on the screen?
     - Fix the unnecessary re-renders.
   - **TODO**: Add `onClick={handleMovieClick}` as prop to `Movie` component -> Problem resurfaces. Why? How can you fix it?
