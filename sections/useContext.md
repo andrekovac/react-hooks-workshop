@@ -14,3 +14,12 @@ as stated [here](https://dev.to/javmurillo/react-context-all-in-one-54ck)
 
 *UNDER CONSTRUCTION*
 
+## How to avoid unncecessary re-renders
+
+### Split your context into multiple contexts
+
+See https://react.dev/learn/scaling-up-with-reducer-and-context
+
+### `useMemo` your context value
+
+### `ThemeConsumer` component with `React.memo`
