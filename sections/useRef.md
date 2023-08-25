@@ -2,8 +2,8 @@
 
 ### **[Extra]** `useRef` in general
 
-- **Stable across re-renders**: React stores the ref to remain immutable over the course of the lifetime of the component (especially if the contents (i.e. `ref.current` value) gets mutated).
-- Thus, `useRef` value remains the same across re-renders.
+- **Stable across re-renders**: React stores the ref to remain immutable over the course of the lifetime of the component (especially if the contents (i.e. `ref.current` value) gets mutated). Thus, `useRef` value remains the same across re-renders.
+- When to use it? - You need a sort of data storage which doesn't influnce re-renders and which is tied to the component, so it's not a global variable. 
 - [**CodeSandBox**: ref vs. state vs. local variable (JS)](https://codesandbox.io/s/usestate-useref-vs-local-values-ogm61?file=/src/index.js) shows the difference to an object value in `useState` and local variables.
 
 - **Bound to a component instance**: `useRef` is bound to a component instance (as is `useState` btw). Play around with this [CodeSandBox: 07 - useRef vs. external variable (JS)](https://codesandbox.io/s/07-useref-vs-external-variable-d0zsm?file=/src/index.js) to see the difference.
