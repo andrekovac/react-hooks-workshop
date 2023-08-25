@@ -59,6 +59,7 @@ A workshop which dives deep into all React built-in hooks
 - [`usePrevious` hook](./sections/extra-usePrevious-hook.md)
 - [`useState` error: `setState` on unmounted component](./sections/setState-on-unmounted-component.md)
 - [batched `useState` calls](./sections/batched-useState-calls.md)
+- [React Strictmode](./sections/StrictMode.md)
 
 ---
 
