@@ -206,6 +206,60 @@ useEffect(() => {
 
 **Use `useEffectEvent`** when you need to read latest values in Effects without triggering re-runs.
 
+## Historical Context: The Ref Workaround
+
+Before `useEffectEvent` was introduced in React 19.2, developers commonly used `useRef` to solve this problem. Here's how the same chat room example would have been written:
+
+### The Old Way (Pre-React 19.2)
+
+```tsx
+import { useEffect, useRef } from 'react'
+
+function ChatRoom({ roomId, theme }) {
+  // Store latest theme in a ref
+  const themeRef = useRef(theme)
+
+  // Keep ref updated with latest theme
+  useEffect(() => {
+    themeRef.current = theme
+  }, [theme])
+
+  useEffect(() => {
+    connectToChatRoom(roomId)
+    logAnalytics(themeRef.current) // Read from ref
+    return () => disconnectFromChatRoom(roomId)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [roomId]) // theme not in deps, ESLint complains
+}
+```
+
+### The New Way (React 19.2+)
+
+```tsx
+import { useEffect, useEffectEvent } from 'react'
+
+function ChatRoom({ roomId, theme }) {
+  const onConnected = useEffectEvent(() => {
+    logAnalytics(theme) // Directly read latest theme
+  })
+
+  useEffect(() => {
+    connectToChatRoom(roomId)
+    onConnected()
+    return () => disconnectFromChatRoom(roomId)
+  }, [roomId]) // Clean, no ESLint complaints
+}
+```
+
+### Why `useEffectEvent` is Better
+
+1. **Less boilerplate** - No need for separate ref and synchronization Effect
+2. **No ESLint warnings** - Properly recognized by the linter
+3. **Clearer intent** - The name tells you what it's for
+4. **Type-safe** - Better TypeScript inference
+
+If you see the ref pattern in older codebases (or in the [`useRef` section](../useRef.md) of this workshop), you now know it can be modernized with `useEffectEvent`!
+
 ## Further Reading
 
 - [React 19.2 Release Notes](https://react.dev/blog/2025/10/01/react-19-2)
