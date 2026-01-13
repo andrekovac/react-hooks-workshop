@@ -17,6 +17,17 @@
 
 - `React.memo` is a higher-order-component which shallowly compares props before rendering to prevent unnecessary re-renders. 
 - The **second argument** of `React.memo`, i.e. a function of the form `(prevProps, nextProps) => true if same result should prevent re-render. false otherwise.` can be used to refine the props comparison.
+- **Tipp**: Set the `displayName` property of your component to make debugging easier (i.e. with React DevTools):
+
+  ```tsx
+  import React from 'react';
+
+  const MyComponent = React.memo(() => {
+    // ...
+  })
+  
+  MyComponent.displayName = 'MyComponent';
+  ```
 
 ## Impact of passed handler references
 

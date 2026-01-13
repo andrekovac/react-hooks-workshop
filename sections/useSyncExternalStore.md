@@ -85,6 +85,60 @@ const useSyncExternalStore = <T, S>(
 ): T;
 ```
 
+## Other example
+
+- Using a rxjs `BehaviorSubject` as data source.
+- Creating a selector with `createSelector` from `reselect` library.
+
+```ts
+// subscribe to changes of rxjs BehaviorSubject
+const subscribe = (onStoreChange: () => void) => {
+    const subscription = stateChanged.subscribe(onStoreChange);
+    return () => subscription.unsubscribe();
+};
+
+// my own store via `useSyncExternalStore`
+const useMyStore = ({
+  data: { dataType = 'liveData', parameterNames, defaultValues },
+  dataTransform = standardDataTransform,
+}) => {
+   const [selector, initialValues] = createParamsSelector({
+        data: {
+            dataType,
+            parameterNames,
+            defaultValues,
+        },
+        dataTransform,
+    });
+
+    return useSyncExternalStore(subscribe, () => {
+      const comAPIData = stateChanged.getValue();
+
+      if (comAPIData) {
+          return selector(comAPIData);
+      }
+      return initialValues;
+  });
+}
+```
+
+Notes:
+
+- `createParamsSelector` has the signature `createParamsSelector: ({ data, dataTransform }) => [Selector, InitialValues]`
+- `stateChange` is defined as as rxjs BehaviorSubject
+
+  ```ts
+  import { BehaviorSubject } from 'rxjs';
+  
+  export const stateChanged = new BehaviorSubject<Data | null>(null);
+  ```
+
+  and data is send to subscribers via:
+
+  ```ts
+  stateChanged.next(data);
+  ```
+
 ## History
 
 - New in React 18

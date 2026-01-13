@@ -16,43 +16,62 @@ A workshop which dives deep into all React built-in hooks
 4. [`useRef` hook](./sections/useRef.md)
 5. [`useEffect` hook](./sections/useEffect.md)
 
-	- dependency array
-	- how to prevent race conditions when fetching data
+   - dependency array
+   - how to prevent race conditions when fetching data
 
 6. [`useCallback` hook](./sections/useCallback.md)
 
-	- Covering "Removing dependencies: **functions**" heuristics
+   - Covering "Removing dependencies: **functions**" heuristics
 
 7. [custom hooks](./sections/custom-hook.md)
 8. [`useEffect` and `useState` interplay](./sections/use-effect-use-state-interplay.md)
 
-	- Covering "Removing dependencies: **values**" heuristics
+   - Covering "Removing dependencies: **values**" heuristics
 
 9. [`useReducer`](./sections/useReducer.md)
 10. [`useLayoutEffect`](./sections/useLayoutEffect.md)
 
-	Topics covered:
-	
-	- `useLayoutEffect` vs. `useEffect`
-	- a-typical use of `useState` setter function
-	- `useEffect`/`useLayoutEffect` dependency array with **refs**
-	- React hooks **lifecycle**
+    Topics covered:
+
+    - `useLayoutEffect` vs. `useEffect`
+    - a-typical use of `useState` setter function
+    - `useEffect`/`useLayoutEffect` dependency array with **refs**
+    - React hooks **lifecycle**
 
 11. [class vs. function components](./sections/class-vs-function-component.md)
 12. [`React.memo` HOC performance improvement](./sections/react-memo.md)
 
-	Topics covered:
+    Topics covered:
 
-	- how to avoid unnecessary React re-renderings
-	- Interplay with `useCallback` hook
-	- How change in props triggers re-renderings
-	- Discussion of code organization
+    - how to avoid unnecessary React re-renderings
+    - Interplay with `useCallback` hook
+    - How change in props triggers re-renderings
+    - Discussion of code organization
 
 13. [`useMemo` hook](./sections/useMemo.md)
 14. [`useImperativeHandle` hook](./sections/useImperativeHandle.md)
 15. [`useSyncExternalStore` hook (React 18)](./sections/useSyncExternalStore.md)
-16. [Context + `useContext` hook](./sections/useContext.md)
-17. [Debugging (incl. `useDebugValue` hook)](./sections/debugging.md)
+16. [`useEffectEvent` hook (React 19.2+)](./sections/useEffectEvent/README.md)
+
+    Topics covered:
+
+    - Reading latest props/state in Effects without re-runs
+    - Analytics and logging patterns
+    - Effect Event rules and ESLint enforcement
+    - Comparison with `useCallback`
+
+17. [Context + `useContext` hook](./sections/useContext.md)
+18. [Debugging (incl. `useDebugValue` hook)](./sections/debugging.md)
+19. [Concurrent Mode](./sections/concurrentMode/index.md)
+
+    Topics covered:
+
+    - `Suspense` component
+    - `ErrorBoundary` component
+    - `useTransition` hook
+    - `useDeferredValue` hook
+    - `useTransition` and `useDeferredValue` interplay
+    - `useTransition` and `useDeferredValue` with `useEffect`
 
 ## Extra
 
@@ -60,6 +79,7 @@ A workshop which dives deep into all React built-in hooks
 - [`useState` error: `setState` on unmounted component](./sections/setState-on-unmounted-component.md)
 - [batched `useState` calls](./sections/batched-useState-calls.md)
 - [React Strictmode](./sections/StrictMode.md)
+- [Composition](./sections/composition.md)
 
 ---
 
@@ -80,4 +100,4 @@ And a huge thanks to all my students with whom I worked through the examples. Yo
 ## Great resources
 
 - [React eli5](https://github.com/reactwg/react-18/discussions/46)
-	Eli5 (explained like a 5 years old) are great articles for every topic. It's great that there's one for React, too.
+  Eli5 (explained like a 5 years old) are great articles for every topic. It's great that there's one for React, too.
