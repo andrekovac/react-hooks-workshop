@@ -1,0 +1,33 @@
+.ref-vs-state-vs-local-page {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.info-box {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.counter-section {
+  margin-top: 2rem;
+}
+
+.increment-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.observations-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff3cd;
+  border-radius: 8px;
+}

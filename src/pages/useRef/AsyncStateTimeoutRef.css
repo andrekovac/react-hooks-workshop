@@ -1,0 +1,64 @@
+.async-state-timeout-ref-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info-box,
+.try-it-box,
+.key-insight-box {
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.info-box {
+  background: #f0f0f0;
+}
+
+.count-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.buttons-container button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buttons-container button {
+  background: #646cff;
+}
+
+.buttons-container .stale-button {
+  background: #f59e0b;
+}
+
+.buttons-container .ref-button {
+  background: #10b981;
+}
+
+.try-it-box.stale {
+  background: #dbeafe;
+}
+
+.try-it-box.ref {
+  background: #dcfce7;
+}
+
+.key-insight-box {
+  margin-top: 2rem;
+  background: #fff3cd;
+}

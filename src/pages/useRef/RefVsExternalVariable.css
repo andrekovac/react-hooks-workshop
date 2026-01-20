@@ -1,0 +1,61 @@
+.ref-vs-external-variable-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ref-vs-external-variable-page .info-box {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.ref-vs-external-variable-page ul {
+  margin-bottom: 2rem;
+}
+
+.counters-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.counter-container {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid palevioletred;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-container button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.counter-container h3 {
+  margin: 0.5rem 0;
+}
+
+.count-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.key-takeaway-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff3cd;
+  border-radius: 8px;
+}

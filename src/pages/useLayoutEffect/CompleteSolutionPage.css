@@ -1,0 +1,44 @@
+.complete-solution-page textarea {
+  width: 300px;
+  height: 150px;
+  resize: both;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.complete-solution-page .info-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.complete-solution-page .info-box.success {
+  background: #d4edda;
+  color: #155724;
+  border-left: 4px solid #28a745;
+}
+
+.complete-solution-page .info-box {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.complete-solution-page .info-box.secondary {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.complete-solution-page .info-box.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.complete-solution-page .info-box pre {
+  background: #222;
+  color: #0f0;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow: auto;
+  font-size: 0.85rem;
+}

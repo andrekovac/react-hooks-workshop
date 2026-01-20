@@ -1,0 +1,15 @@
+.data-displayer {
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  color: #333;
+}
+
+.data-displayer.loading {
+  padding: 1rem;
+}
+
+.character-info {
+  text-align: left;
+  margin-top: 1rem;
+}

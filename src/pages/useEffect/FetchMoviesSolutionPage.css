@@ -1,0 +1,20 @@
+.fetch-movies-solution-page {
+  padding: 2rem;
+}
+
+.fetch-movies-solution-page .info-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  color: #333;
+}
+
+.fetch-movies-solution-page .key-concepts-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #d1ecf1;
+  border-radius: 8px;
+  text-align: left;
+  color: #333;
+}
