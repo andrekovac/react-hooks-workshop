@@ -24,6 +24,36 @@ import RaceConditionProblemPage from './pages/useEffect/RaceConditionProblemPage
 
 import RaceConditionSolutionPage from './pages/useEffect/RaceConditionSolutionPage';
 
+import AsyncSettingProblemPage from './pages/asyncSettingAndRetrieval/AsyncSettingProblemPage';
+
+import AsyncSettingNonIdealPage from './pages/asyncSettingAndRetrieval/AsyncSettingNonIdealPage';
+
+import AsyncSettingSolutionPage from './pages/asyncSettingAndRetrieval/AsyncSettingSolutionPage';
+
+import AsyncRetrievalProblemPage from './pages/asyncSettingAndRetrieval/AsyncRetrievalProblemPage';
+
+import AsyncRetrievalSolutionPrimitivePage from './pages/asyncSettingAndRetrieval/AsyncRetrievalSolutionPrimitivePage';
+
+import AsyncRetrievalClosureDemoPage from './pages/asyncSettingAndRetrieval/AsyncRetrievalClosureDemoPage';
+
+import AsyncRetrievalObjectProblemPage from './pages/asyncSettingAndRetrieval/AsyncRetrievalObjectProblemPage';
+
+import AsyncRetrievalObjectSolutionPage from './pages/asyncSettingAndRetrieval/AsyncRetrievalObjectSolutionPage';
+
+import InternalVsExternalStatePage from './pages/reactStateBasics/InternalVsExternalStatePage';
+
+import MutableVsImmutablePage from './pages/reactStateBasics/MutableVsImmutablePage';
+
+import OneStateChangeAllNewPage from './pages/reactStateBasics/OneStateChangeAllNewPage';
+
+import SetterCreatesNewObjectsPage from './pages/reactStateBasics/SetterCreatesNewObjectsPage';
+
+import UseStateBasicPage from './pages/reactStateBasics/UseStateBasicPage';
+
+import UseCallbackPage from './pages/useCallback/UseCallbackPage';
+
+import CustomHookPage from './pages/customHook/CustomHookPage';
+
 function App() {
   return (
     <Router>
@@ -41,6 +71,21 @@ function App() {
           <Route path="/useeffect/fetch-movies-solution" element={<FetchMoviesSolutionPage />} />
           <Route path="/useeffect/race-condition-problem" element={<RaceConditionProblemPage />} />
           <Route path="/useeffect/race-condition-solution" element={<RaceConditionSolutionPage />} />
+          <Route path="/async-setting-and-retrieval/async-setting-problem" element={<AsyncSettingProblemPage />} />
+          <Route path="/async-setting-and-retrieval/async-setting-non-ideal" element={<AsyncSettingNonIdealPage />} />
+          <Route path="/async-setting-and-retrieval/async-setting-solution" element={<AsyncSettingSolutionPage />} />
+          <Route path="/async-setting-and-retrieval/async-retrieval-problem" element={<AsyncRetrievalProblemPage />} />
+          <Route path="/async-setting-and-retrieval/async-retrieval-solution-primitive" element={<AsyncRetrievalSolutionPrimitivePage />} />
+          <Route path="/async-setting-and-retrieval/async-retrieval-closure-demo" element={<AsyncRetrievalClosureDemoPage />} />
+          <Route path="/async-setting-and-retrieval/async-retrieval-object-problem" element={<AsyncRetrievalObjectProblemPage />} />
+          <Route path="/async-setting-and-retrieval/async-retrieval-object-solution" element={<AsyncRetrievalObjectSolutionPage />} />
+          <Route path="/react-state-basics/internal-vs-external-state" element={<InternalVsExternalStatePage />} />
+          <Route path="/react-state-basics/mutable-vs-immutable" element={<MutableVsImmutablePage />} />
+          <Route path="/react-state-basics/one-state-change-all-new" element={<OneStateChangeAllNewPage />} />
+          <Route path="/react-state-basics/setter-creates-new-objects" element={<SetterCreatesNewObjectsPage />} />
+          <Route path="/react-state-basics/usestate-basic" element={<UseStateBasicPage />} />
+          <Route path="/usecallback" element={<UseCallbackPage />} />
+          <Route path="/custom-hook" element={<CustomHookPage />} />
           {/* More routes will be added here */}
         </Route>
       </Routes>

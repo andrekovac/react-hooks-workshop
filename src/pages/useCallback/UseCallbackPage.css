@@ -1,0 +1,40 @@
+.use-callback-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.use-callback-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.use-callback-page .controls {
+  margin: 1rem 0;
+}
+
+.use-callback-page button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.use-callback-page .results {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.use-callback-page .error {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.use-callback-page .movie-info {
+  text-align: left;
+}

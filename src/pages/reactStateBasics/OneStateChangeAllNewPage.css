@@ -1,0 +1,61 @@
+.one-state-change-all-new-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.one-state-change-all-new-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.one-state-change-all-new-page .counter-section {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.one-state-change-all-new-page .increment-button {
+  margin-right: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.one-state-change-all-new-page .explanation-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.one-state-change-all-new-page .explanation-box.solution {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.one-state-change-all-new-page .explanation-box.warning {
+  background: #fff3cd;
+  color: #856404;
+  margin-top: 1rem;
+}
+
+.one-state-change-all-new-page .explanation-box h4 {
+  margin-top: 1rem;
+}
+
+.one-state-change-all-new-page .explanation-box pre {
+  background: #222;
+  color: #0f0;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow: auto;
+  font-size: 0.85rem;
+}

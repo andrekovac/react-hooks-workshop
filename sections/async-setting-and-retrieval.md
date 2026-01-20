@@ -49,7 +49,7 @@ These CodeSandBoxes contain explanations:
 
 - Why?: State values are **new** on every **render** (primitive data types and objects alike are `const` values)
 - The [**CodeSandBox**: Problem also exists for `count` stored in an object](https://codesandbox.io/s/async-retrieval-of-state-count-in-object-vocfr).
-- Learn more about the `useRef` hook in the [`useRef` hook section](./useRef.md) and via this [**CodeSandBox**: ref vs. state vs. local variable (JS)](https://codesandbox.io/s/usestate-useref-vs-local-values-ogm61?file=/src/index.js)
+- Learn more about the `useRef` hook in the [`useRef` hook section](./useRef.md) and via this [**CodeSandBox**: ref vs. state vs. local variable (JS)](https://codesandbox.io/s/ususeState-useref-vs-local-values-ogm61?file=/src/index.js)
 
 - **Task** with `{ count: number }` object: [**CodeSandBox**: async retrieval of state (object)](https://codesandbox.io/s/async-retrieval-of-state-object-solution-start-4bbn6)
 - **Solution** with `{ count: number }` object: [**CodeSandBox**: async retrieval of state with helper variable (object)](https://codesandbox.io/s/async-retrieval-of-state-with-helper-variable-object-l8esr)

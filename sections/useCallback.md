@@ -10,4 +10,4 @@
 2. Function out of component
 3. Function with `useCallback` (see [this CodeSandBox of our code (JS)](https://codesandbox.io/s/12-dependency-array-usecallback-r82lx) for an example)
 
-- **Note**: `useState` setter functions may be ommitted from the dependency array. [React guarrantees that their identity will stay stable across re-renders for the lifetime of the component](https://reactjs.org/docs/hooks-reference.html#usestate).
+- **Note**: `useState` setter functions may be ommitted from the dependency array. [React guarrantees that their identity will stay stable across re-renders for the lifetime of the component](https://react.dev/learn/removing-effect-dependencies#move-dynamic-objects-and-functions-inside-your-effect).

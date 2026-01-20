@@ -1,0 +1,68 @@
+.custom-hook-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.custom-hook-page header {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.custom-hook-page .tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.custom-hook-page .tabs button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.custom-hook-page .tabs button.active {
+  background: #ccc;
+  font-weight: bold;
+}
+
+.custom-hook-example {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.custom-hook-example .controls {
+    margin-bottom: 1rem;
+}
+
+.custom-hook-example button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.custom-hook-example .results {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: #e9ecef;
+  border-radius: 8px;
+}
+
+.custom-hook-example .error {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.custom-hook-example .movie-info {
+  text-align: left;
+}

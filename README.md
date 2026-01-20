@@ -11,10 +11,10 @@ A workshop which dives deep into all React built-in hooks
 ## Topics
 
 1. [React hook Definition](./sections/definition.md)
-2. [React state basics](./sections/react-state-basics/README.md)
-3. [Async setting and retrieval](./sections/async-setting-and-retrieval/README.md)
-4. [`useRef` hook](./sections/useRef/README.md)
-5. [`useEffect` hook](./sections/useEffect/README.md)
+2. [React state basics](./sections/react-state-basics.md)
+3. [Async setting and retrieval](./sections/async-setting-and-retrieval.md)
+4. [`useRef` hook](./sections/useRef.md)
+5. [`useEffect` hook](./sections/useEffect.md)
 
    - dependency array
    - how to prevent race conditions when fetching data
@@ -29,7 +29,7 @@ A workshop which dives deep into all React built-in hooks
    - Covering "Removing dependencies: **values**" heuristics
 
 9. [`useReducer`](./sections/useReducer.md)
-10. [`useLayoutEffect`](./sections/useLayoutEffect/README.md)
+10. [`useLayoutEffect`](./sections/useLayoutEffect.md)
 
     Topics covered:
 

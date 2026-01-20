@@ -28,9 +28,9 @@
 
 - A new state value is created if the value passed to the setter function is not strictly equal the current value (referential equality in case of complex data types)
 - Every successful state upate causes:
-	1. The component function to be re-run
-	2. A new state value to be returned by the `useState` hook
-	
+       1. The component function to be re-run
+       2. A new state value to be returned by the `useState` hook
+
 **Note**:
 
 - states are `const` (not `let`)! [**CodeSandBox**: Also objects are entirely new objects, not just copied references (JS)](https://codesandbox.io/s/usestate-setter-creates-new-objects-r4vid))
@@ -43,7 +43,7 @@
 **TODO**: Review this one: [**CodeSandBox**: One state change causes all states to be new! (JS)](https://codesandbox.io/s/one-state-change-all-states-are-new-9lubk)
 
 ## Appendix: Shallow copy vs. deep copy:
-	
+
 ```js
 // current state
 const obj1 = { val: 1 };

@@ -1,0 +1,29 @@
+.async-setting-non-ideal-page {
+  /* Common styles might come from global App.css or a shared stylesheet */
+}
+
+.async-setting-non-ideal-page h3 {
+  /* Default h3 styles */
+}
+
+.async-setting-non-ideal-page p {
+  /* Default p styles */
+}
+
+.async-setting-non-ideal-page hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.async-setting-non-ideal-page button {
+  /* Inherit from global button styles or define specific ones */
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

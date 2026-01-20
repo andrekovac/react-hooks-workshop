@@ -1,0 +1,73 @@
+.mutable-vs-immutable-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mutable-vs-immutable-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mutable-vs-immutable-page .section-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  text-align: left;
+  color: #333;
+}
+
+.mutable-vs-immutable-page hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.mutable-vs-immutable-page button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0.5rem; /* For button-half spacing */
+}
+
+.mutable-vs-immutable-page .note {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.mutable-vs-immutable-page .error-text {
+  color: #d32f2f;
+}
+
+.mutable-vs-immutable-page .success-text {
+  color: #2e7d32;
+}
+
+.mutable-vs-immutable-page .button-half {
+  display: inline-block; /* To allow two buttons on one line */
+  width: calc(50% - 1rem); /* Adjust for margin */
+}
+
+.mutable-vs-immutable-page .field-display {
+  margin-bottom: 1rem;
+}
+
+.mutable-vs-immutable-page .error-section {
+  background: #ffe5e5;
+  color: #d32f2f;
+  border-left: 4px solid #d32f2f;
+}
+
+.mutable-vs-immutable-page .summary pre {
+  background: #222;
+  color: #0f0;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow: auto;
+  font-size: 0.85rem;
+}

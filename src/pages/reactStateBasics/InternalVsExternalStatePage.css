@@ -1,0 +1,55 @@
+.internal-vs-external-state-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.internal-vs-external-state-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.internal-vs-external-state-page .count-display-section {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.internal-vs-external-state-page .click-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.internal-vs-external-state-page .explanation-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.internal-vs-external-state-page .explanation-box.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.internal-vs-external-state-page .explanation-box.solution {
+  background: #d1ecf1;
+  color: #0c5460;
+  margin-top: 1rem;
+}
+
+.internal-vs-external-state-page .explanation-box ul,
+.internal-vs-external-state-page .explanation-box ol {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.internal-vs-external-state-page .explanation-box strong {
+  font-weight: bold;
+}
