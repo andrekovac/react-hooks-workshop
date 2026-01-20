@@ -55,7 +55,7 @@ npm run dev
 - **Workaround**: External variable to track latest value
 - **Why it works**: Variable updates immediately, readable in closure
 - **Why it's limited**: Same issues as async-setting-non-ideal
-- **Use case**: Understanding the problem, not production code
+- **Use case**: Understanding the problem, not for production code
 
 **6. [async-retrieval-closure-demo](./async-retrieval-closure-demo/)** - Closure Deep Dive
 - **Demonstrates**: How closures capture by reference vs by value
