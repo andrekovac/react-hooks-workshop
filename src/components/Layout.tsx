@@ -3,9 +3,12 @@ import { useRefresh } from '../contexts/RefreshContext';
 import FloatingRefreshButton from './FloatingRefreshButton';
 import './Layout.css';
 
-const Layout = () => {
+const RefreshableOutlet = () => {
   const { refreshKey } = useRefresh();
+  return <Outlet key={refreshKey} />;
+};
 
+const Layout = () => {
   return (
     <div className="layout">
       <aside className="sidebar">
@@ -39,28 +42,13 @@ const Layout = () => {
           <h3>Async Setting and Retrieval</h3>
           <ul>
             <li>
-              <NavLink to="/async-setting-and-retrieval/async-setting-problem">Async Setting Problem</NavLink>
+              <NavLink to="/async-setting-and-retrieval/async-setting">Async Setting</NavLink>
             </li>
             <li>
-              <NavLink to="/async-setting-and-retrieval/async-setting-non-ideal">Async Setting Non-Ideal</NavLink>
+              <NavLink to="/async-setting-and-retrieval/async-retrieval">Async Retrieval (Primitive)</NavLink>
             </li>
             <li>
-              <NavLink to="/async-setting-and-retrieval/async-setting-solution">Async Setting Solution</NavLink>
-            </li>
-            <li>
-              <NavLink to="/async-setting-and-retrieval/async-retrieval-problem">Async Retrieval Problem</NavLink>
-            </li>
-            <li>
-              <NavLink to="/async-setting-and-retrieval/async-retrieval-solution-primitive">Async Retrieval Solution (Primitive)</NavLink>
-            </li>
-            <li>
-              <NavLink to="/async-setting-and-retrieval/async-retrieval-closure-demo">Async Retrieval Closure Demo</NavLink>
-            </li>
-            <li>
-              <NavLink to="/async-setting-and-retrieval/async-retrieval-object-problem">Async Retrieval Object Problem</NavLink>
-            </li>
-            <li>
-              <NavLink to="/async-setting-and-retrieval/async-retrieval-object-solution">Async Retrieval Object Solution</NavLink>
+              <NavLink to="/async-setting-and-retrieval/async-retrieval-object">Async Retrieval (Object)</NavLink>
             </li>
           </ul>
 
@@ -81,16 +69,10 @@ const Layout = () => {
           <h3>useEffect</h3>
           <ul>
             <li>
-              <NavLink to="/useeffect/fetch-movies-starter">Fetch Movies Starter</NavLink>
+              <NavLink to="/useeffect/fetch-movies">Fetch Movies</NavLink>
             </li>
             <li>
-              <NavLink to="/useeffect/fetch-movies-solution">Fetch Movies Solution</NavLink>
-            </li>
-            <li>
-              <NavLink to="/useeffect/race-condition-problem">Race Condition Problem</NavLink>
-            </li>
-            <li>
-              <NavLink to="/useeffect/race-condition-solution">Race Condition Solution</NavLink>
+              <NavLink to="/useeffect/race-condition">Race Condition</NavLink>
             </li>
             <li>
               <NavLink to="/useeffect-usestate-interplay">useEffect/useState Interplay</NavLink>
@@ -149,7 +131,7 @@ const Layout = () => {
         </nav>
       </aside>
       <main className="content">
-        <Outlet key={refreshKey} />
+        <RefreshableOutlet />
       </main>
       <FloatingRefreshButton />
     </div>

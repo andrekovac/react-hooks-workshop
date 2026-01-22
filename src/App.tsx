@@ -12,29 +12,15 @@ import UseEffectEventPage from './pages/useEffectEvent/UseEffectEventPage';
 
 import UseLayoutEffectPage from './pages/useLayoutEffect/UseLayoutEffectPage';
 
-import FetchMoviesStarterPage from './pages/useEffect/FetchMoviesStarterPage';
+import FetchMoviesPage from './pages/useEffect/FetchMoviesPage';
 
-import FetchMoviesSolutionPage from './pages/useEffect/FetchMoviesSolutionPage';
+import RaceConditionPage from './pages/useEffect/RaceConditionPage';
 
-import RaceConditionProblemPage from './pages/useEffect/RaceConditionProblemPage';
+import AsyncSettingPage from './pages/asyncSettingAndRetrieval/AsyncSettingPage';
 
-import RaceConditionSolutionPage from './pages/useEffect/RaceConditionSolutionPage';
+import AsyncRetrievalPage from './pages/asyncSettingAndRetrieval/AsyncRetrievalPage';
 
-import AsyncSettingProblemPage from './pages/asyncSettingAndRetrieval/AsyncSettingProblemPage';
-
-import AsyncSettingNonIdealPage from './pages/asyncSettingAndRetrieval/AsyncSettingNonIdealPage';
-
-import AsyncSettingSolutionPage from './pages/asyncSettingAndRetrieval/AsyncSettingSolutionPage';
-
-import AsyncRetrievalProblemPage from './pages/asyncSettingAndRetrieval/AsyncRetrievalProblemPage';
-
-import AsyncRetrievalSolutionPrimitivePage from './pages/asyncSettingAndRetrieval/AsyncRetrievalSolutionPrimitivePage';
-
-import AsyncRetrievalClosureDemoPage from './pages/asyncSettingAndRetrieval/AsyncRetrievalClosureDemoPage';
-
-import AsyncRetrievalObjectProblemPage from './pages/asyncSettingAndRetrieval/AsyncRetrievalObjectProblemPage';
-
-import AsyncRetrievalObjectSolutionPage from './pages/asyncSettingAndRetrieval/AsyncRetrievalObjectSolutionPage';
+import AsyncRetrievalObjectPage from './pages/asyncSettingAndRetrieval/AsyncRetrievalObjectPage';
 
 import InternalVsExternalStatePage from './pages/reactStateBasics/InternalVsExternalStatePage';
 
@@ -67,18 +53,11 @@ function App() {
             <Route path="/useref/async-state-timeout-ref" element={<AsyncStateTimeoutRefPage />} />
             <Route path="/useeffectevent" element={<UseEffectEventPage />} />
             <Route path="/uselayouteffect" element={<UseLayoutEffectPage />} />
-            <Route path="/useeffect/fetch-movies-starter" element={<FetchMoviesStarterPage />} />
-            <Route path="/useeffect/fetch-movies-solution" element={<FetchMoviesSolutionPage />} />
-            <Route path="/useeffect/race-condition-problem" element={<RaceConditionProblemPage />} />
-            <Route path="/useeffect/race-condition-solution" element={<RaceConditionSolutionPage />} />
-            <Route path="/async-setting-and-retrieval/async-setting-problem" element={<AsyncSettingProblemPage />} />
-            <Route path="/async-setting-and-retrieval/async-setting-non-ideal" element={<AsyncSettingNonIdealPage />} />
-            <Route path="/async-setting-and-retrieval/async-setting-solution" element={<AsyncSettingSolutionPage />} />
-            <Route path="/async-setting-and-retrieval/async-retrieval-problem" element={<AsyncRetrievalProblemPage />} />
-            <Route path="/async-setting-and-retrieval/async-retrieval-solution-primitive" element={<AsyncRetrievalSolutionPrimitivePage />} />
-            <Route path="/async-setting-and-retrieval/async-retrieval-closure-demo" element={<AsyncRetrievalClosureDemoPage />} />
-            <Route path="/async-setting-and-retrieval/async-retrieval-object-problem" element={<AsyncRetrievalObjectProblemPage />} />
-            <Route path="/async-setting-and-retrieval/async-retrieval-object-solution" element={<AsyncRetrievalObjectSolutionPage />} />
+            <Route path="/useeffect/fetch-movies" element={<FetchMoviesPage />} />
+            <Route path="/useeffect/race-condition" element={<RaceConditionPage />} />
+            <Route path="/async-setting-and-retrieval/async-setting" element={<AsyncSettingPage />} />
+            <Route path="/async-setting-and-retrieval/async-retrieval" element={<AsyncRetrievalPage />} />
+            <Route path="/async-setting-and-retrieval/async-retrieval-object" element={<AsyncRetrievalObjectPage />} />
             <Route path="/react-state-basics/internal-vs-external-state" element={<InternalVsExternalStatePage />} />
             <Route path="/react-state-basics/mutable-vs-immutable" element={<MutableVsImmutablePage />} />
             <Route path="/react-state-basics/one-state-change-all-new" element={<OneStateChangeAllNewPage />} />

@@ -1,0 +1,85 @@
+.async-retrieval-object-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.async-retrieval-object-page header {
+  padding-bottom: 1rem;
+}
+
+.async-retrieval-object-page .tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.async-retrieval-object-page .tabs button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.async-retrieval-object-page .tabs button.active {
+  background: #ccc;
+  font-weight: bold;
+}
+
+.async-retrieval-object-example {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.async-retrieval-object-example hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.async-retrieval-object-example button {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.async-retrieval-object-example button:hover {
+  background-color: #535bf2;
+}
+
+.info-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  background: #e9ecef;
+}
+
+.info-box.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.info-box.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.info-box code {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+}

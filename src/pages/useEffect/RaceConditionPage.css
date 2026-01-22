@@ -1,0 +1,126 @@
+.race-condition-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.race-condition-page header {
+  padding-bottom: 1rem;
+}
+
+.race-condition-page .tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.race-condition-page .tabs button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.race-condition-page .tabs button.active {
+  background: #ccc;
+  font-weight: bold;
+}
+
+.race-condition-example {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.race-condition-example h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.race-condition-example hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.race-condition-example button {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.race-condition-example button:hover {
+  background-color: #535bf2;
+}
+
+.info-box {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #e9ecef;
+  margin-bottom: 1rem;
+}
+
+.info-box.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.info-box.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.data-displayer {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.data-displayer.loading {
+  text-align: center;
+  color: #666;
+}
+
+.character-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.solution-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e7f3ff;
+  border: 1px solid #b6d4fe;
+  border-radius: 8px;
+}
+
+.solution-info h4 {
+  margin-top: 0;
+}
+
+.solution-info ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.solution-info code {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
