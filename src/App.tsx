@@ -53,6 +53,7 @@ import { RefreshProvider } from './contexts/RefreshContext';
 import UseEffectUseStateInterplayPage from './pages/useEffectUseStateInterplay/UseEffectUseStateInterplayPage';
 import UseReducerPage from './pages/useReducer/UseReducerPage';
 import ClassVsFunctionPage from './pages/classVsFunction/ClassVsFunctionPage';
+import ReactMemoPage from './pages/reactMemo/ReactMemoPage';
 
 function App() {
   return (
@@ -88,6 +89,7 @@ function App() {
             <Route path="/useeffect-usestate-interplay" element={<UseEffectUseStateInterplayPage />} />
             <Route path="/usereducer" element={<UseReducerPage />} />
             <Route path="/class-vs-function" element={<ClassVsFunctionPage />} />
+            <Route path="/react-memo" element={<ReactMemoPage />} />
             {/* More routes will be added here */}
           </Route>
         </Routes>

@@ -111,6 +111,13 @@ const Layout = () => {
             </li>
           </ul>
 
+          <h3>React.memo</h3>
+          <ul>
+            <li>
+              <NavLink to="/react-memo">React.memo Demo</NavLink>
+            </li>
+          </ul>
+
           <h3>Custom Hook</h3>
           <ul>
             <li>
