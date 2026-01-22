@@ -10,11 +10,7 @@ import AsyncStateTimeoutRefPage from './pages/useRef/AsyncStateTimeoutRef';
 
 import UseEffectEventPage from './pages/useEffectEvent/UseEffectEventPage';
 
-import FlickeringProblemPage from './pages/useLayoutEffect/FlickeringProblemPage';
-
-import FlickeringSolutionPage from './pages/useLayoutEffect/FlickeringSolutionPage';
-
-import CompleteSolutionPage from './pages/useLayoutEffect/CompleteSolutionPage';
+import UseLayoutEffectPage from './pages/useLayoutEffect/UseLayoutEffectPage';
 
 import FetchMoviesStarterPage from './pages/useEffect/FetchMoviesStarterPage';
 
@@ -64,9 +60,7 @@ function App() {
           <Route path="/useref/ref-vs-external-variable" element={<RefVsExternalVariablePage />} />
           <Route path="/useref/async-state-timeout-ref" element={<AsyncStateTimeoutRefPage />} />
           <Route path="/useeffectevent" element={<UseEffectEventPage />} />
-          <Route path="/uselayouteffect/flickering-problem" element={<FlickeringProblemPage />} />
-          <Route path="/uselayouteffect/flickering-solution" element={<FlickeringSolutionPage />} />
-          <Route path="/uselayouteffect/complete-solution" element={<CompleteSolutionPage />} />
+          <Route path="/uselayouteffect" element={<UseLayoutEffectPage />} />
           <Route path="/useeffect/fetch-movies-starter" element={<FetchMoviesStarterPage />} />
           <Route path="/useeffect/fetch-movies-solution" element={<FetchMoviesSolutionPage />} />
           <Route path="/useeffect/race-condition-problem" element={<RaceConditionProblemPage />} />

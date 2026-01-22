@@ -1,0 +1,85 @@
+.use-layout-effect-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.use-layout-effect-page header {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.use-layout-effect-page .tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.use-layout-effect-page .tabs button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.use-layout-effect-page .tabs button.active {
+  background: #ccc;
+  font-weight: bold;
+}
+
+.use-layout-effect-example {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+
+.use-layout-effect-example textarea {
+  width: 300px;
+  height: 150px;
+  resize: both;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.use-layout-effect-example .info-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.use-layout-effect-example .info-box.success {
+  background: #d4edda;
+  color: #155724;
+  border-left: 4px solid #28a745;
+}
+
+.use-layout-effect-example .info-box {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.use-layout-effect-example .info-box.secondary {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.use-layout-effect-example .info-box.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.use-layout-effect-example .info-box pre {
+  background: #222;
+  color: #0f0;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow: auto;
+  font-size: 0.85rem;
+}

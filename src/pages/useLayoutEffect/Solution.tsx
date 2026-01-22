@@ -1,7 +1,6 @@
 import { useState, useLayoutEffect, useRef } from 'react';
-import './FlickeringSolutionPage.css';
 
-function FlickeringSolutionPage() {
+function Solution() {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
   const el = useRef<HTMLTextAreaElement>(null);
@@ -17,8 +16,7 @@ function FlickeringSolutionPage() {
   }, [cH, cW]);
 
   return (
-    <div className="flickering-solution-page">
-      <h1>useLayoutEffect Solution</h1>
+    <div className="use-layout-effect-example">
       <h2>Resize the textarea</h2>
       <hr />
       <p>
@@ -64,4 +62,4 @@ function FlickeringSolutionPage() {
   );
 }
 
-export default FlickeringSolutionPage;
+export default Solution;

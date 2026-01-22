@@ -107,13 +107,7 @@ const Layout = () => {
           <h3>useLayoutEffect</h3>
           <ul>
             <li>
-              <NavLink to="/uselayouteffect/flickering-problem">Flickering Problem</NavLink>
-            </li>
-            <li>
-              <NavLink to="/uselayouteffect/flickering-solution">Flickering Solution</NavLink>
-            </li>
-            <li>
-              <NavLink to="/uselayouteffect/complete-solution">Complete Solution</NavLink>
+              <NavLink to="/uselayouteffect">useLayoutEffect Demo</NavLink>
             </li>
           </ul>
 

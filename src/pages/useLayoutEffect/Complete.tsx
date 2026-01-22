@@ -1,7 +1,6 @@
 import { useState, useLayoutEffect, useRef } from 'react';
-import './CompleteSolutionPage.css';
 
-function CompleteSolutionPage() {
+function Complete() {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
   const el = useRef<HTMLTextAreaElement>(null);
@@ -29,8 +28,7 @@ function CompleteSolutionPage() {
   }, []);
 
   return (
-    <div className="complete-solution-page">
-      <h1>Complete Solution 🎉</h1>
+    <div className="use-layout-effect-example">
       <h2>Resize the textarea - automatic updates!</h2>
       <hr />
       <p>
@@ -115,4 +113,4 @@ function CompleteSolutionPage() {
   );
 }
 
-export default CompleteSolutionPage;
+export default Complete;

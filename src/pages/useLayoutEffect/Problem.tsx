@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import './FlickeringProblemPage.css';
 
-function FlickeringProblemPage() {
+function Problem() {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
   const el = useRef<HTMLTextAreaElement>(null);
@@ -17,8 +16,7 @@ function FlickeringProblemPage() {
   }, [cH, cW]);
 
   return (
-    <div className="flickering-problem-page">
-      <h1>useEffect Flickering</h1>
+    <div className="use-layout-effect-example">
       <h2>Resize the textarea</h2>
       <hr />
       <p>
@@ -36,25 +34,25 @@ function FlickeringProblemPage() {
       />
       <hr />
       <p>Can you observe any unpleasant behavior in the UI?</p>
-      <div className="info-box">
+      <div className="info-box warning">
         <h3>⚠️ TWO Problems in this example:</h3>
         <h4>Problem 1: Values don't update when resizing</h4>
         <ul>
-          <li>Resize the textarea - notice values often DON'T update</li>
+          <li>Resize the textarea - notice values often DON'T update (especially when increasing the textarea)</li>
           <li>The effect only runs when something ELSE causes a re-render (like clicking)</li>
           <li>This is because <code>el.current</code> is the same object - resizing doesn't change the reference</li>
         </ul>
         <h4>Problem 2: Flickering when values DO update</h4>
         <ol>
-          <li>Resize the textarea</li>
-          <li><strong>Click inside</strong> (don't type!) - this triggers re-render and effect</li>
-          <li>Watch the numbers briefly show "px" (undefined) then update</li>
-          <li>This flicker happens because useEffect runs AFTER paint</li>
+          <li>Resize the textarea - notice px values flickering (especially when decreasing the textarea)</li>
+          <li><strong>Click inside</strong> the textarea - this triggers re-render and effect</li>
+          <li>Watch the width show "px" (undefined) and it remains that way</li>
         </ol>
+        <p>This flickering happens because useEffect runs AFTER paint</p>
         <p><strong>Why clicking sets width to undefined:</strong> It's a trick to force a re-render so the effect runs. In the real world, you'd want the effect to run automatically when resizing!</p>
       </div>
     </div>
   );
 }
 
-export default FlickeringProblemPage;
+export default Problem;
