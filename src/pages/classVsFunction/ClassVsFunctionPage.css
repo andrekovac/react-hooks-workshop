@@ -1,0 +1,64 @@
+.class-vs-fn-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.class-vs-fn-page header,
+.class-vs-fn-page .controls {
+  margin-bottom: 1.5rem;
+}
+
+.class-vs-fn-page .profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.class-vs-fn-page .profile-header img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 4px solid #646cff;
+}
+
+.class-vs-fn-page .profile-header .user-name {
+  color: #646cff;
+}
+
+.class-vs-fn-page .info-box {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #e9ecef;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.comparison-column {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.comparison-column button {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.6rem;
+}
+
+.comparison-column .explanation {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  min-height: 100px;
+}

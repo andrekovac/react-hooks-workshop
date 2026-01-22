@@ -1,0 +1,107 @@
+.use-reducer-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.use-reducer-page header {
+  padding-bottom: 1rem;
+}
+
+.use-reducer-page .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.use-reducer-page .tabs button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.use-reducer-page .tabs button.active {
+  background: #ccc;
+  font-weight: bold;
+}
+
+.reducer-example {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.reducer-example h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #646cff;
+}
+
+.info-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  background: #e9ecef;
+}
+
+.info-box.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.info-box.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.info-box code, .info-box pre {
+    display: block;
+    white-space: pre-wrap;
+    background: rgba(0,0,0,0.05);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+/* Comparison Grid */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.reducer-column h4 {
+    min-height: 40px;
+}
+.reducer-column h3 {
+    font-size: 2.5rem;
+    color: #646cff;
+}
+.reducer-column .note {
+    font-size: 0.9rem;
+    color: #6c757d;
+    min-height: 80px;
+}
+
+/* Stepper */
+.stepper-controls {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.stepper-controls input {
+    width: 80px;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    text-align: center;
+}

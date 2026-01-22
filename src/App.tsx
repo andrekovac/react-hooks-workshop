@@ -51,6 +51,8 @@ import UseCallbackPage from './pages/useCallback/UseCallbackPage';
 import CustomHookPage from './pages/customHook/CustomHookPage';
 import { RefreshProvider } from './contexts/RefreshContext';
 import UseEffectUseStateInterplayPage from './pages/useEffectUseStateInterplay/UseEffectUseStateInterplayPage';
+import UseReducerPage from './pages/useReducer/UseReducerPage';
+import ClassVsFunctionPage from './pages/classVsFunction/ClassVsFunctionPage';
 
 function App() {
   return (
@@ -84,6 +86,8 @@ function App() {
             <Route path="/usecallback" element={<UseCallbackPage />} />
             <Route path="/custom-hook" element={<CustomHookPage />} />
             <Route path="/useeffect-usestate-interplay" element={<UseEffectUseStateInterplayPage />} />
+            <Route path="/usereducer" element={<UseReducerPage />} />
+            <Route path="/class-vs-function" element={<ClassVsFunctionPage />} />
             {/* More routes will be added here */}
           </Route>
         </Routes>

@@ -97,6 +97,20 @@ const Layout = () => {
             </li>
           </ul>
 
+          <h3>useReducer</h3>
+          <ul>
+            <li>
+              <NavLink to="/usereducer">useReducer Demo</NavLink>
+            </li>
+          </ul>
+
+          <h3>Class vs. Function</h3>
+          <ul>
+            <li>
+              <NavLink to="/class-vs-function">Class vs. Function</NavLink>
+            </li>
+          </ul>
+
           <h3>Custom Hook</h3>
           <ul>
             <li>
