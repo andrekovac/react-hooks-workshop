@@ -49,6 +49,7 @@ import UseStateBasicPage from './pages/reactStateBasics/UseStateBasicPage';
 import UseCallbackPage from './pages/useCallback/UseCallbackPage';
 
 import CustomHookPage from './pages/customHook/CustomHookPage';
+import UseEffectUseStateInterplayPage from './pages/useEffectUseStateInterplay/UseEffectUseStateInterplayPage';
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
           <Route path="/react-state-basics/usestate-basic" element={<UseStateBasicPage />} />
           <Route path="/usecallback" element={<UseCallbackPage />} />
           <Route path="/custom-hook" element={<CustomHookPage />} />
+          <Route path="/useeffect-usestate-interplay" element={<UseEffectUseStateInterplayPage />} />
           {/* More routes will be added here */}
         </Route>
       </Routes>

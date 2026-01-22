@@ -88,6 +88,9 @@ const Layout = () => {
             <li>
               <NavLink to="/useeffect/race-condition-solution">Race Condition Solution</NavLink>
             </li>
+            <li>
+              <NavLink to="/useeffect-usestate-interplay">useEffect/useState Interplay</NavLink>
+            </li>
           </ul>
 
           <h3>Custom Hook</h3>

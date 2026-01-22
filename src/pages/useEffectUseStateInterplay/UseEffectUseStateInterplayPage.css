@@ -1,0 +1,72 @@
+.use-effect-interplay-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.use-effect-interplay-page header {
+  padding-bottom: 1rem;
+}
+
+.use-effect-interplay-page .tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.use-effect-interplay-page .tabs button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.use-effect-interplay-page .tabs button.active {
+  background: #ccc;
+  font-weight: bold;
+}
+
+.interplay-example {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.interplay-example h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #646cff;
+}
+
+.interplay-example .info-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  background: #e9ecef;
+}
+
+.interplay-example .info-box.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.interplay-example .info-box.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.interplay-example .info-box code {
+    display: block;
+    white-space: pre-wrap;
+    background: rgba(0,0,0,0.05);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}

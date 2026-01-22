@@ -9,11 +9,14 @@ function Problem() {
   const cW = el?.current?.clientWidth;
 
   useEffect(() => {
+    console.log('useEffect', cH, cW);
     if (el.current) {
       setWidth(el.current.clientWidth);
       setHeight(el.current.clientHeight);
     }
   }, [cH, cW]);
+
+  console.log('render', width, height);
 
   return (
     <div className="use-layout-effect-example">
@@ -27,8 +30,9 @@ function Problem() {
       </p>
       <textarea
         onClick={() => {
+          console.log('click', width, height);
           // @ts-expect-error
-          setWidth(undefined);
+          setWidth(0);
         }}
         ref={el}
       />
