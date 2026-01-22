@@ -49,43 +49,46 @@ import UseStateBasicPage from './pages/reactStateBasics/UseStateBasicPage';
 import UseCallbackPage from './pages/useCallback/UseCallbackPage';
 
 import CustomHookPage from './pages/customHook/CustomHookPage';
+import { RefreshProvider } from './contexts/RefreshContext';
 import UseEffectUseStateInterplayPage from './pages/useEffectUseStateInterplay/UseEffectUseStateInterplayPage';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="/useref/ref-vs-state-vs-local" element={<RefVsStateVsLocalPage />} />
-          <Route path="/useref/ref-vs-external-variable" element={<RefVsExternalVariablePage />} />
-          <Route path="/useref/async-state-timeout-ref" element={<AsyncStateTimeoutRefPage />} />
-          <Route path="/useeffectevent" element={<UseEffectEventPage />} />
-          <Route path="/uselayouteffect" element={<UseLayoutEffectPage />} />
-          <Route path="/useeffect/fetch-movies-starter" element={<FetchMoviesStarterPage />} />
-          <Route path="/useeffect/fetch-movies-solution" element={<FetchMoviesSolutionPage />} />
-          <Route path="/useeffect/race-condition-problem" element={<RaceConditionProblemPage />} />
-          <Route path="/useeffect/race-condition-solution" element={<RaceConditionSolutionPage />} />
-          <Route path="/async-setting-and-retrieval/async-setting-problem" element={<AsyncSettingProblemPage />} />
-          <Route path="/async-setting-and-retrieval/async-setting-non-ideal" element={<AsyncSettingNonIdealPage />} />
-          <Route path="/async-setting-and-retrieval/async-setting-solution" element={<AsyncSettingSolutionPage />} />
-          <Route path="/async-setting-and-retrieval/async-retrieval-problem" element={<AsyncRetrievalProblemPage />} />
-          <Route path="/async-setting-and-retrieval/async-retrieval-solution-primitive" element={<AsyncRetrievalSolutionPrimitivePage />} />
-          <Route path="/async-setting-and-retrieval/async-retrieval-closure-demo" element={<AsyncRetrievalClosureDemoPage />} />
-          <Route path="/async-setting-and-retrieval/async-retrieval-object-problem" element={<AsyncRetrievalObjectProblemPage />} />
-          <Route path="/async-setting-and-retrieval/async-retrieval-object-solution" element={<AsyncRetrievalObjectSolutionPage />} />
-          <Route path="/react-state-basics/internal-vs-external-state" element={<InternalVsExternalStatePage />} />
-          <Route path="/react-state-basics/mutable-vs-immutable" element={<MutableVsImmutablePage />} />
-          <Route path="/react-state-basics/one-state-change-all-new" element={<OneStateChangeAllNewPage />} />
-          <Route path="/react-state-basics/setter-creates-new-objects" element={<SetterCreatesNewObjectsPage />} />
-          <Route path="/react-state-basics/usestate-basic" element={<UseStateBasicPage />} />
-          <Route path="/usecallback" element={<UseCallbackPage />} />
-          <Route path="/custom-hook" element={<CustomHookPage />} />
-          <Route path="/useeffect-usestate-interplay" element={<UseEffectUseStateInterplayPage />} />
-          {/* More routes will be added here */}
-        </Route>
-      </Routes>
-    </Router>
+    <RefreshProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="/useref/ref-vs-state-vs-local" element={<RefVsStateVsLocalPage />} />
+            <Route path="/useref/ref-vs-external-variable" element={<RefVsExternalVariablePage />} />
+            <Route path="/useref/async-state-timeout-ref" element={<AsyncStateTimeoutRefPage />} />
+            <Route path="/useeffectevent" element={<UseEffectEventPage />} />
+            <Route path="/uselayouteffect" element={<UseLayoutEffectPage />} />
+            <Route path="/useeffect/fetch-movies-starter" element={<FetchMoviesStarterPage />} />
+            <Route path="/useeffect/fetch-movies-solution" element={<FetchMoviesSolutionPage />} />
+            <Route path="/useeffect/race-condition-problem" element={<RaceConditionProblemPage />} />
+            <Route path="/useeffect/race-condition-solution" element={<RaceConditionSolutionPage />} />
+            <Route path="/async-setting-and-retrieval/async-setting-problem" element={<AsyncSettingProblemPage />} />
+            <Route path="/async-setting-and-retrieval/async-setting-non-ideal" element={<AsyncSettingNonIdealPage />} />
+            <Route path="/async-setting-and-retrieval/async-setting-solution" element={<AsyncSettingSolutionPage />} />
+            <Route path="/async-setting-and-retrieval/async-retrieval-problem" element={<AsyncRetrievalProblemPage />} />
+            <Route path="/async-setting-and-retrieval/async-retrieval-solution-primitive" element={<AsyncRetrievalSolutionPrimitivePage />} />
+            <Route path="/async-setting-and-retrieval/async-retrieval-closure-demo" element={<AsyncRetrievalClosureDemoPage />} />
+            <Route path="/async-setting-and-retrieval/async-retrieval-object-problem" element={<AsyncRetrievalObjectProblemPage />} />
+            <Route path="/async-setting-and-retrieval/async-retrieval-object-solution" element={<AsyncRetrievalObjectSolutionPage />} />
+            <Route path="/react-state-basics/internal-vs-external-state" element={<InternalVsExternalStatePage />} />
+            <Route path="/react-state-basics/mutable-vs-immutable" element={<MutableVsImmutablePage />} />
+            <Route path="/react-state-basics/one-state-change-all-new" element={<OneStateChangeAllNewPage />} />
+            <Route path="/react-state-basics/setter-creates-new-objects" element={<SetterCreatesNewObjectsPage />} />
+            <Route path="/react-state-basics/usestate-basic" element={<UseStateBasicPage />} />
+            <Route path="/usecallback" element={<UseCallbackPage />} />
+            <Route path="/custom-hook" element={<CustomHookPage />} />
+            <Route path="/useeffect-usestate-interplay" element={<UseEffectUseStateInterplayPage />} />
+            {/* More routes will be added here */}
+          </Route>
+        </Routes>
+      </Router>
+    </RefreshProvider>
   );
 }
 

@@ -1,7 +1,11 @@
 import { NavLink, Outlet } from 'react-router-dom';
+import { useRefresh } from '../contexts/RefreshContext';
+import FloatingRefreshButton from './FloatingRefreshButton';
 import './Layout.css';
 
 const Layout = () => {
+  const { refreshKey } = useRefresh();
+
   return (
     <div className="layout">
       <aside className="sidebar">
@@ -124,8 +128,9 @@ const Layout = () => {
         </nav>
       </aside>
       <main className="content">
-        <Outlet />
+        <Outlet key={refreshKey} />
       </main>
+      <FloatingRefreshButton />
     </div>
   );
 };
