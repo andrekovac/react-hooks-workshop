@@ -8,7 +8,7 @@ const Problem = () => {
       // This will not work as expected because the `count`
       // value is "stale" inside the closure of the interval.
       // It will always be 0.
-      setCount(count + 1);
+      setCount(c => c + 1);
     }, 1000);
     return () => clearInterval(id);
   }, []);

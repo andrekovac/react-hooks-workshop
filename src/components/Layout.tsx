@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { useRefresh } from '../contexts/RefreshContext';
 import FloatingRefreshButton from './FloatingRefreshButton';
@@ -9,9 +10,18 @@ const RefreshableOutlet = () => {
 };
 
 const Layout = () => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
   return (
     <div className="layout">
-      <aside className="sidebar">
+      <button
+        className={`sidebar-toggle ${isCollapsed ? 'collapsed' : ''}`}
+        onClick={() => setIsCollapsed(!isCollapsed)}
+        title={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+      >
+        {isCollapsed ? '>' : '<'}
+      </button>
+      <aside className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
         <nav>
           <h2>React Hooks Workshop</h2>
           <ul>
@@ -96,7 +106,13 @@ const Layout = () => {
           <h3>React.memo</h3>
           <ul>
             <li>
-              <NavLink to="/react-memo">React.memo Demo</NavLink>
+              <NavLink to="/react-memo">Overview</NavLink>
+            </li>
+            <li>
+              <NavLink to="/react-memo/basics">Part 1: Basics</NavLink>
+            </li>
+            <li>
+              <NavLink to="/react-memo/handlers">Part 2: Handlers</NavLink>
             </li>
           </ul>
 

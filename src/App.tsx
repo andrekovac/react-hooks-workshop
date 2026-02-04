@@ -40,6 +40,8 @@ import UseEffectUseStateInterplayPage from './pages/useEffectUseStateInterplay/U
 import UseReducerPage from './pages/useReducer/UseReducerPage';
 import ClassVsFunctionPage from './pages/classVsFunction/ClassVsFunctionPage';
 import ReactMemoPage from './pages/reactMemo/ReactMemoPage';
+import ReactMemoPage1 from './pages/reactMemo/ReactMemoPage1';
+import ReactMemoPage2 from './pages/reactMemo/ReactMemoPage2';
 
 function App() {
   return (
@@ -69,6 +71,8 @@ function App() {
             <Route path="/usereducer" element={<UseReducerPage />} />
             <Route path="/class-vs-function" element={<ClassVsFunctionPage />} />
             <Route path="/react-memo" element={<ReactMemoPage />} />
+            <Route path="/react-memo/basics" element={<ReactMemoPage1 />} />
+            <Route path="/react-memo/handlers" element={<ReactMemoPage2 />} />
             {/* More routes will be added here */}
           </Route>
         </Routes>
