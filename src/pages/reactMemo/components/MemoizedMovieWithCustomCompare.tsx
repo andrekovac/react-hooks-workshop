@@ -7,7 +7,7 @@ type MovieProps = {
 };
 
 const Movie: React.FC<MovieProps> = ({ title, year, onClick }) => {
-  console.log("[Movie 🎬] Component re-render");
+  console.log(`[Movie 🎬] ${title} re-rendered`);
 
   return (
     <div className="movie-item" onClick={() => onClick?.(title)}>
@@ -17,4 +17,11 @@ const Movie: React.FC<MovieProps> = ({ title, year, onClick }) => {
   );
 };
 
-export default Movie;
+export default React.memo(
+  Movie,
+  // function to decide whether two sets of props didn't change
+  // if true, component won't re-render.
+  (prevProps, nextProps) => {
+    return prevProps.title === nextProps.title && prevProps.year === nextProps.year;
+  }
+);

@@ -1,14 +1,7 @@
-import { useState } from 'react';
-import Problem from './Problem';
-import Solution1 from './Solution1';
-import Solution2 from './Solution2';
+import { Link } from 'react-router-dom';
 import './ReactMemoPage.css';
 
-type Tab = 'problem' | 'solution1' | 'solution2';
-
 function ReactMemoPage() {
-  const [activeTab, setActiveTab] = useState<Tab>('problem');
-
   return (
     <div className="react-memo-page">
       <header>
@@ -16,31 +9,32 @@ function ReactMemoPage() {
         <p>Preventing unnecessary re-renders of components.</p>
       </header>
 
-      <nav className="tabs">
-        <button
-          className={activeTab === 'problem' ? 'active' : ''}
-          onClick={() => setActiveTab('problem')}
-        >
-          ❌ Problem
-        </button>
-        <button
-          className={activeTab === 'solution1' ? 'active' : ''}
-          onClick={() => setActiveTab('solution1')}
-        >
-          ✅ Solution 1
-        </button>
-        <button
-          className={activeTab === 'solution2' ? 'active' : ''}
-          onClick={() => setActiveTab('solution2')}
-        >
-          ✅ Solution 2
-        </button>
-      </nav>
-
       <main>
-        {activeTab === 'problem' && <Problem />}
-        {activeTab === 'solution1' && <Solution1 />}
-        {activeTab === 'solution2' && <Solution2 />}
+        <div className="react-memo-example">
+          <div className="info-box">
+            <h3>Part 1: React.memo Basics</h3>
+            <p>Learn why components re-render when their parent re-renders, and how to prevent it.</p>
+            <ul>
+              <li>Problem: Movie component re-renders when only views change</li>
+              <li>Solution 1: Refactor - move state into the component that needs it</li>
+              <li>Solution 2: Use <code>React.memo</code> to skip re-renders</li>
+              <li>Solution 3: Use <code>useMemo</code> to memoize JSX elements</li>
+            </ul>
+            <p><Link to="/react-memo/basics" className="page-link">Go to Part 1</Link></p>
+          </div>
+
+          <div className="info-box" style={{ marginTop: '1rem' }}>
+            <h3>Part 2: React.memo with Handlers</h3>
+            <p>Learn how function props break memoization and how to fix it.</p>
+            <ul>
+              <li>Problem: Passing onClick handler breaks React.memo</li>
+              <li>Solution 1: Refactor - move handler inside the component</li>
+              <li>Solution 2: Use <code>useCallback</code> to stabilize function references</li>
+              <li>Solution 3: Use custom compare function in React.memo</li>
+            </ul>
+            <p><Link to="/react-memo/handlers" className="page-link">Go to Part 2</Link></p>
+          </div>
+        </div>
       </main>
     </div>
   );

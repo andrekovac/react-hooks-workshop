@@ -1,7 +1,6 @@
 .react-memo-page {
   padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
   text-align: center;
 }
 
@@ -67,4 +66,40 @@
 .info-box.warning {
   background: #fff3cd;
   color: #856404;
+}
+
+.info-box ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.info-box li {
+  margin: 0.25rem 0;
+}
+
+.code-block {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.875rem;
+  text-align: left;
+  white-space: pre;
+}
+
+.page-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.page-link:hover {
+  background: #0056b3;
 }
