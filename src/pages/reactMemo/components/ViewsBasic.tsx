@@ -5,9 +5,14 @@ type ViewsProps = {
 };
 
 const ViewsBasic: React.FC<ViewsProps> = ({ views }) => {
-  console.log("[Views 👀] Component re-render");
+  console.log("[Views] Component re-render");
 
-  return <span>Views: {views}</span>;
+  return (
+    <div className="views-counter">
+      <span className="views-label">Views</span>
+      <span className="views-number">{views.toLocaleString()}</span>
+    </div>
+  );
 };
 
 export default ViewsBasic;

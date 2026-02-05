@@ -8,9 +8,9 @@ const MoviesList = () => {
 
   return (
     <div>
-      {movies.map(({ id, title, year }) => (
+      {movies.map(({ id, title, year, showtimes }) => (
         <div key={id} className="movie-wrapper">
-          <MovieBasic title={title} year={year} />
+          <MovieBasic title={title} year={year} showtimes={showtimes} />
           <ViewsWithHook movieId={id} />
         </div>
       ))}

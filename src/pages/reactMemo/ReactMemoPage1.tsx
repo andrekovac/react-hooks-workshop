@@ -13,8 +13,8 @@ function ReactMemoPage1() {
   return (
     <div className="react-memo-page">
       <header>
-        <h1>React.memo Basics</h1>
-        <p>Preventing unnecessary re-renders when parent state changes.</p>
+        <h1>Preventing Re-renders</h1>
+        <p>Understanding why components re-render and how to optimize.</p>
       </header>
 
       <nav className="tabs">

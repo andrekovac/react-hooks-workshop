@@ -10,8 +10,8 @@ const MoviesList = () => {
   // Memoize the Movie components so they don't re-render when views change
   const memoizedMovies = useMemo(
     () =>
-      movies.map(({ id, title, year }) => (
-        <MovieBasic key={id} title={title} year={year} />
+      movies.map(({ id, title, year, showtimes }) => (
+        <MovieBasic key={id} title={title} year={year} showtimes={showtimes} />
       )),
     [] // Empty dependency array: movies list never changes
   );

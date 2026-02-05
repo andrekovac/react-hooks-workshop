@@ -18,15 +18,23 @@
 .react-memo-page .tabs button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  border: 2px solid #ccc;
-  background: transparent;
+  border: 2px solid transparent;
+  background: #e9ecef;
   border-radius: 8px;
   cursor: pointer;
+  color: #495057;
+  transition: all 0.15s ease;
+}
+
+.react-memo-page .tabs button:hover {
+  background: #dee2e6;
 }
 
 .react-memo-page .tabs button.active {
-  background: #ccc;
-  font-weight: bold;
+  background: #333;
+  color: #fff;
+  border-color: #333;
+  font-weight: normal;
 }
 
 .react-memo-example {
@@ -40,10 +48,15 @@
 .movie-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
   border-bottom: 1px solid #e0e0e0;
   text-align: left;
+}
+
+.movie-wrapper:last-child {
+  border-bottom: none;
 }
 
 .movie-item {
@@ -102,4 +115,126 @@
 
 .page-link:hover {
   background: #0056b3;
+}
+
+/* Movie component styles */
+.movie-item {
+  flex: 1;
+}
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.movie-header h3 {
+  margin: 0;
+}
+
+.movie-year {
+  margin: 0.25rem 0 0.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Showtimes styles */
+.showtimes {
+  margin-top: 0.5rem;
+}
+
+.showtimes-label {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.showtimes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.showtime-item {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background: #e9ecef;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.showtime-time {
+  font-weight: bold;
+  color: #333;
+}
+
+.showtime-room {
+  color: #666;
+}
+
+.showtime-format {
+  color: #007bff;
+  font-weight: 500;
+}
+
+/* Watchlist button styles */
+.watchlist-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #6c757d;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+  color: #333;
+}
+
+.watchlist-btn:hover {
+  background: #e9ecef;
+  border-color: #495057;
+}
+
+.watchlist-btn.in-watchlist {
+  background: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+.watchlist-btn.in-watchlist:hover {
+  background: #e0a800;
+  border-color: #e0a800;
+}
+
+/* Views counter styles */
+.views-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  min-width: 100px;
+}
+
+.views-counter .views-label {
+  font-size: 0.7rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.views-counter .views-number {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  font-variant-numeric: tabular-nums;
 }

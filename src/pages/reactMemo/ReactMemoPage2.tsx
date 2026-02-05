@@ -13,8 +13,8 @@ function ReactMemoPage2() {
   return (
     <div className="react-memo-page">
       <header>
-        <h1>React.memo with Handlers</h1>
-        <p>Handling function props that break memoization.</p>
+        <h1>Memoization with Handlers</h1>
+        <p>Why function props break memoization and how to fix it.</p>
       </header>
 
       <nav className="tabs">

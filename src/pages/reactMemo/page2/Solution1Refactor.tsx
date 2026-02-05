@@ -10,9 +10,9 @@ const MoviesList = () => {
 
   return (
     <div>
-      {movies.map(({ id, title, year }) => (
+      {movies.map(({ id, title, year, showtimes }) => (
         <div key={id} className="movie-wrapper">
-          <MemoizeMovieWithHandler title={title} year={year} />
+          <MemoizeMovieWithHandler title={title} year={year} showtimes={showtimes} />
           <ViewsBasic views={views[id]} />
         </div>
       ))}
@@ -26,9 +26,9 @@ const Solution1Refactor = () => {
       <MoviesList />
       <div className="info-box success">
         <h3>Solution 1: Move handler inside Movie</h3>
-        <p>By defining the <code>onClick</code> handler inside the <code>Movie</code> component itself, we avoid passing a function prop from the parent.</p>
-        <p>Since <code>title</code> and <code>year</code> are stable primitive props, <code>React.memo</code> works as expected.</p>
-        <p><strong>Trade-off:</strong> The handler logic is now coupled to the <code>Movie</code> component. This might not be ideal if you need different click behaviors in different contexts.</p>
+        <p>By defining the watchlist toggle handler inside the <code>Movie</code> component itself, we avoid passing a function prop from the parent.</p>
+        <p>Since <code>title</code>, <code>year</code>, and <code>showtimes</code> are stable props, <code>React.memo</code> works as expected.</p>
+        <p><strong>Trade-off:</strong> The handler logic is now coupled to the <code>Movie</code> component. The watchlist state would need to be managed differently (e.g., context, global store) since it can't be shared with the parent.</p>
         <p>Open the console to observe the log messages.</p>
       </div>
     </div>

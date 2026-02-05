@@ -8,10 +8,10 @@ const MoviesList = () => {
 
   return (
     <div>
-      {movies.map(({ id, title, year }) => (
+      {movies.map(({ id, title, year, showtimes }) => (
         <div key={id} className="movie-wrapper">
           {/* MovieMemoizedBasic is wrapped in React.memo */}
-          <MovieMemoizedBasic title={title} year={year} />
+          <MovieMemoizedBasic title={title} year={year} showtimes={showtimes} />
           <ViewsBasic views={views[id]} />
         </div>
       ))}
@@ -26,7 +26,7 @@ const Solution2Memo = () => {
       <div className="info-box success">
         <h3>Solution 2: React.memo</h3>
         <p>By wrapping the <code>Movie</code> component in <code>React.memo</code>, React will skip re-rendering it if its props haven't changed.</p>
-        <p>The <code>title</code> and <code>year</code> props remain the same across renders, so <code>Movie</code> doesn't re-render.</p>
+        <p>The <code>title</code>, <code>year</code>, and <code>showtimes</code> props remain the same across renders, so <code>Movie</code> doesn't re-render.</p>
         <p><strong>How it works:</strong> <code>React.memo</code> performs a shallow comparison of props. If all props are equal, the component is not re-rendered.</p>
         <p>Open the console to observe the log messages.</p>
       </div>

@@ -7,9 +7,14 @@ type ViewsWithHookProps = {
 
 const ViewsWithHook: React.FC<ViewsWithHookProps> = ({ movieId }) => {
   const views = useViews();
-  console.log("[Views 👀] Component re-render");
+  console.log("[Views] Component re-render");
 
-  return <span>Views: {views[movieId]}</span>;
+  return (
+    <div className="views-counter">
+      <span className="views-label">Views</span>
+      <span className="views-number">{views[movieId].toLocaleString()}</span>
+    </div>
+  );
 };
 
 export default ViewsWithHook;
