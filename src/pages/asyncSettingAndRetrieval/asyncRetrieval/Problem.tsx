@@ -5,6 +5,8 @@ const Problem = () => {
 
   const handleAlertClick = () => {
     setTimeout(() => {
+      // Bug: `count` is captured at the moment this callback is created
+      // It will show the OLD value, not the current value
       alert("You clicked " + count + " times!");
     }, 3000);
   };
