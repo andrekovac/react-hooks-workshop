@@ -103,7 +103,7 @@ const Layout = () => {
             </li>
           </ul>
 
-          <h3>React.memo</h3>
+          <h3>Performance</h3>
           <ul>
             <li>
               <NavLink to="/react-memo">Overview</NavLink>
