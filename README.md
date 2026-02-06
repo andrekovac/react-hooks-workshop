@@ -102,6 +102,7 @@ And a huge thanks to all my students with whom I worked through the examples. Yo
 Open any example directly in StackBlitz:
 
 **React State Basics:**
+
 - [Internal vs External State](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/reactStateBasics/InternalVsExternalStatePage.tsx)
 - [Mutable vs Immutable](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/reactStateBasics/MutableVsImmutablePage.tsx)
 - [One State Change All New](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/reactStateBasics/OneStateChangeAllNewPage.tsx)
@@ -109,39 +110,51 @@ Open any example directly in StackBlitz:
 - [useState Basic](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/reactStateBasics/UseStateBasicPage.tsx)
 
 **Async Setting and Retrieval:**
+
 - [Async Setting](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/asyncSettingAndRetrieval/AsyncSettingPage.tsx)
 - [Async Retrieval (Primitive)](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/asyncSettingAndRetrieval/AsyncRetrievalPage.tsx)
 - [Async Retrieval (Object)](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/asyncSettingAndRetrieval/AsyncRetrievalObjectPage.tsx)
 
 **useRef:**
+
 - [Ref vs State vs Local](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/useRef/RefVsStateVsLocal.tsx)
 - [Ref vs External Variable](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/useRef/RefVsExternalVariable.tsx)
 - [Async State Timeout Ref](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/useRef/AsyncStateTimeoutRef.tsx)
 
 **useEffect:**
+
 - [Fetch Movies](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/useEffect/FetchMoviesPage.tsx)
 - [Race Condition](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/useEffect/RaceConditionPage.tsx)
 - [useEffect/useState Interplay](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/useEffectUseStateInterplay/UseEffectUseStateInterplayPage.tsx)
 
 **useReducer:**
+
 - [useReducer Demo](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/useReducer/UseReducerPage.tsx)
 
 **Class vs Function:**
+
 - [Class vs Function](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/classVsFunction/ClassVsFunctionPage.tsx)
 
-**React.memo:**
-- [React.memo Demo](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/reactMemo/ReactMemoPage.tsx)
+**Performance:**
+
+- [Performance Overview](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/performance/ReactMemoPage.tsx)
+- [Part 1: Preventing Re-renders](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/performance/ReactMemoPage1.tsx)
+- [Part 2: Memoization with Handlers](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/performance/ReactMemoPage2.tsx)
 
 **Custom Hook:**
+
 - [Custom Hook Demo](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/customHook/CustomHookPage.tsx)
 
 **useEffectEvent:**
+
 - [useEffectEvent Demo](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/useEffectEvent/UseEffectEventPage.tsx)
 
 **useLayoutEffect:**
+
 - [useLayoutEffect Demo](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/useLayoutEffect/UseLayoutEffectPage.tsx)
 
 **useCallback:**
+
 - [useCallback Demo](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/useCallback/UseCallbackPage.tsx)
 
 ## Great resources

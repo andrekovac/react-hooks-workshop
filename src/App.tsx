@@ -39,9 +39,9 @@ import { RefreshProvider } from './contexts/RefreshContext';
 import UseEffectUseStateInterplayPage from './pages/useEffectUseStateInterplay/UseEffectUseStateInterplayPage';
 import UseReducerPage from './pages/useReducer/UseReducerPage';
 import ClassVsFunctionPage from './pages/classVsFunction/ClassVsFunctionPage';
-import ReactMemoPage from './pages/reactMemo/ReactMemoPage';
-import ReactMemoPage1 from './pages/reactMemo/ReactMemoPage1';
-import ReactMemoPage2 from './pages/reactMemo/ReactMemoPage2';
+import ReactMemoPage from './pages/performance/ReactMemoPage';
+import ReactMemoPage1 from './pages/performance/ReactMemoPage1';
+import ReactMemoPage2 from './pages/performance/ReactMemoPage2';
 
 function App() {
   return (
