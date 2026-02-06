@@ -2,6 +2,57 @@
 
 A workshop which dives deep into all React built-in hooks
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js >= 20.0.0
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/andrekovac/react-hooks-workshop.git
+   cd react-hooks-workshop
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the URL shown in the terminal (typically `http://localhost:5173`)
+
+### Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build the project for production
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint to check code quality
+
+### React Compiler Configuration
+
+This project includes React Compiler support. You can enable or disable it in `vite.config.ts`:
+
+```typescript
+const ReactCompilerConfig = {
+  sources: (_filename: string) => {
+    return true; // true = enabled, false = disabled
+  },
+};
+```
+
+See the [React Compiler section](./sections/react-compiler.md) for interactive examples and learning exercises.
+
 ## Structure of this document
 
 - The heart of this document are the "**CodeSandBox**" links. Most of them are written in TypeScript, some in JavaScript (marked by "**(JS)**")
@@ -48,10 +99,21 @@ A workshop which dives deep into all React built-in hooks
     - How change in props triggers re-renderings
     - Discussion of code organization
 
-13. [`useMemo` hook](./sections/useMemo.md)
-14. [`useImperativeHandle` hook](./sections/useImperativeHandle.md)
-15. [`useSyncExternalStore` hook (React 18)](./sections/useSyncExternalStore.md)
-16. [`useEffectEvent` hook (React 19.2+)](./sections/useEffectEvent/README.md)
+13. [React Compiler (React 19+)](./sections/react-compiler.md)
+
+    Topics covered:
+
+    - Automatic memoization vs manual optimization
+    - What React Compiler can and cannot optimize
+    - Interactive examples with enable/disable exercises
+    - React Compiler limitations and real-world considerations
+    - When to still use `React.memo`, `useCallback`, and `useMemo`
+    - Reference stability and prop comparison
+
+14. [`useMemo` hook](./sections/useMemo.md)
+15. [`useImperativeHandle` hook](./sections/useImperativeHandle.md)
+16. [`useSyncExternalStore` hook (React 18)](./sections/useSyncExternalStore.md)
+17. [`useEffectEvent` hook (React 19.2+)](./sections/useEffectEvent/README.md)
 
     Topics covered:
 
@@ -60,9 +122,9 @@ A workshop which dives deep into all React built-in hooks
     - Effect Event rules and ESLint enforcement
     - Comparison with `useCallback`
 
-17. [Context + `useContext` hook](./sections/useContext.md)
-18. [Debugging (incl. `useDebugValue` hook)](./sections/debugging.md)
-19. [Concurrent Mode](./sections/concurrentMode/index.md)
+18. [Context + `useContext` hook](./sections/useContext.md)
+19. [Debugging (incl. `useDebugValue` hook)](./sections/debugging.md)
+20. [Concurrent Mode](./sections/concurrentMode/index.md)
 
     Topics covered:
 
@@ -140,6 +202,13 @@ Open any example directly in StackBlitz:
 - [Performance Overview](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/performance/ReactMemoPage.tsx)
 - [Part 1: Preventing Re-renders](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/performance/ReactMemoPage1.tsx)
 - [Part 2: Memoization with Handlers](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/performance/ReactMemoPage2.tsx)
+
+**React Compiler:**
+
+- [React Compiler - Page 1 Problem](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/performance/page1/Problem.tsx)
+- [React Compiler - Page 1 Solution](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/performance/page1/Solution2Memo.tsx)
+- [React Compiler - Page 2 Problem](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/performance/page2/Problem.tsx)
+- [React Compiler - Page 2 Solution](https://stackblitz.com/github/andrekovac/react-hooks-workshop?file=src/pages/performance/page2/Solution2UseCallback.tsx)
 
 **Custom Hook:**
 
