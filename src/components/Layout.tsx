@@ -106,13 +106,13 @@ const Layout = () => {
           <h3>Performance</h3>
           <ul>
             <li>
-              <NavLink to="/react-memo">Overview</NavLink>
+              <NavLink to="/performance">Overview</NavLink>
             </li>
             <li>
-              <NavLink to="/react-memo/basics">Part 1: Basics</NavLink>
+              <NavLink to="/performance/basics">Part 1: Basics</NavLink>
             </li>
             <li>
-              <NavLink to="/react-memo/handlers">Part 2: Handlers</NavLink>
+              <NavLink to="/performance/handlers">Part 2: Handlers</NavLink>
             </li>
           </ul>
 

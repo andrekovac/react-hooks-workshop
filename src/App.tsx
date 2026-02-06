@@ -70,9 +70,9 @@ function App() {
             <Route path="/useeffect-usestate-interplay" element={<UseEffectUseStateInterplayPage />} />
             <Route path="/usereducer" element={<UseReducerPage />} />
             <Route path="/class-vs-function" element={<ClassVsFunctionPage />} />
-            <Route path="/react-memo" element={<ReactMemoPage />} />
-            <Route path="/react-memo/basics" element={<ReactMemoPage1 />} />
-            <Route path="/react-memo/handlers" element={<ReactMemoPage2 />} />
+            <Route path="/performance" element={<ReactMemoPage />} />
+            <Route path="/performance/basics" element={<ReactMemoPage1 />} />
+            <Route path="/performance/handlers" element={<ReactMemoPage2 />} />
             {/* More routes will be added here */}
           </Route>
         </Routes>

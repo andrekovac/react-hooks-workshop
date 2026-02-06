@@ -13,7 +13,7 @@ const MoviesList = () => {
       movies.map(({ id, title, year, showtimes }) => (
         <MovieBasic key={id} title={title} year={year} showtimes={showtimes} />
       )),
-    [] // Empty dependency array: movies list never changes
+    []
   );
 
   return (
