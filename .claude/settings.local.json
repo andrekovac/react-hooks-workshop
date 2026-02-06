@@ -7,7 +7,9 @@
       "Bash(tree:*)",
       "Bash(find:*)",
       "Bash(xargs:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(npm run dev:*)",
+      "Bash(node -e:*)"
     ]
   }
 }
